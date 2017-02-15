@@ -7,37 +7,16 @@
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
     telemetryConsent: "no"
-    themes: [
-      "unity-ui"
-      "glacier-syntax"
-    ]
   editor:
-    fontFamily: "Menlo"
+    fontFamily: "Inconsolata"
     fontSize: 15
     invisibles: {}
     showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
     softWrapAtPreferredLineLength: true
-  "go-plus":
-    panelDisplayMode: "closed"
-  "linter-eslint":
-    useGlobalEslint: true
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-      "text.html.basic"
-    ]
+    softWrapHangingIndent: 8
+    tabLength: 4
   welcome:
     showOnStartup: false
