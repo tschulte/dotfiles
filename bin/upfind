@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# see http://superuser.com/questions/455723/is-there-an-upwards-find
+while true
+do
+    foundFile=`find $PWD -maxdepth 1 $@`
+    if [[ "$foundFile" != "" ]]
+    then
+        echo $foundFile
+        exit $?
+    elif [[ $(pwd) == / ]]
+    then
+        exit 1
+    fi
+    cd ..
+done
+exit 1
