@@ -1,5 +1,8 @@
 #!/bin/sh
 #
-# Sets macOS defaults by running $ZSH/macos/set-defaults.sh.
+# Sets defaults by running $ZSH/$os/set-defaults.sh.
 
-exec $ZSH/macos/set-defaults.sh
+if [ "$(uname -s)" == "Darwin" ]
+then
+  exec $ZSH/macos/set-defaults.sh
+fi
