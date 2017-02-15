@@ -19,12 +19,32 @@
         editor = vim
 [apply]
         whitespace = nowarn
+[merge]
+        renormalize = true
+        conflictstyle = diff3
+        tool = kdiff3
 [mergetool]
         keepBackup = false
+        keepTemporaries = false
 [difftool]
         prompt = false
 [help]
         autocorrect = 1
+[rerere]
+        enabled = true
+        autoupdate = true
+[gui]
+        encoding = utf-8
+        fontui = -family \"DejaVu Sans\" -size 8 -weight normal -slant roman -underline 0 -overstrike 0
+        fontdiff = -family \"DejaVu Sans Mono\" -size 8 -weight normal -slant roman -underline 0 -overstrike 0
+[log]
+        mailmap = true
+[diff "jar"]
+        textconv = jar-dump
+[rebase]
+        autosquash = true
+[pull]
+        rebase = preserve
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.
