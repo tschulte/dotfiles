@@ -28,8 +28,6 @@
         keepTemporaries = false
 [difftool]
         prompt = false
-[help]
-        autocorrect = 1
 [rerere]
         enabled = true
         autoupdate = true
