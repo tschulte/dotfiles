@@ -20,7 +20,6 @@ setopt EXTENDED_HISTORY # add timestamps to history
 setopt PROMPT_SUBST
 setopt CORRECT
 setopt COMPLETE_IN_WORD
-setopt IGNORE_EOF
 
 setopt APPEND_HISTORY # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
@@ -33,6 +32,11 @@ setopt complete_aliases
 
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
+
+# Ctrl+Left and Ctrl+Right
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
