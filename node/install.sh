@@ -1,4 +1,4 @@
-if test ! $(which spoof)
+if test ! $(which spoof) && test $(which npm)
 then
   sudo npm install spoof -g
 fi
