@@ -1,6 +1,6 @@
 # If we are on an ubuntu based system, update all installed packages.
 
-if test $(which apt)
+if test $(hash apt 2>/dev/null)
 then
   echo "› adding repositories to apt"
   sudo apt-add-repository -y ppa:webupd8team/java
