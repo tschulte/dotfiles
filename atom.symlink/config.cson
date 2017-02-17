@@ -12,10 +12,10 @@
     fontFamily: "Inconsolata"
     fontSize: 15
     invisibles: {}
+    preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    softWrapAtPreferredLineLength: true
     softWrapHangingIndent: 8
     tabLength: 4
   welcome:
