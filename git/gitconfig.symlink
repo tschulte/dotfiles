@@ -5,10 +5,13 @@
         protocol = https
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+        fap = fetch --all --prune
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%aN>%Creset'
+        merged = branch -a --merged
+        unmerged = branch -a --no-merged
+        upstream = !git branch -v | sed -r -e '/ahead|behind/!d' -e 's/[ *]\\s(\\S*).*(\\[(ahead|behind).+?\\]).*/\\1\\2/g'
+        shortstat = diff --shortstat
 [color]
         diff = auto
         status = auto
