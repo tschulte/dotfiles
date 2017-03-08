@@ -6,7 +6,7 @@
 # using Homebrew.
 
 # Check for Homebrew
-if test ! $(hash brew 2>/dev/null)
+if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
 
@@ -14,7 +14,7 @@ then
   if test "$(uname -s)" = "Darwin"
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux" && test ! $(hash apt 2>/dev/null)
+  elif test "$(expr substr $(uname -s) 1 5)" = "Linux" && test ! $(which apt)
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi

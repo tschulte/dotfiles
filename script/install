@@ -7,7 +7,7 @@ set -e
 cd "$(dirname $0)"/..
 
 # If we have homebrew, let's install and setup homebrew.
-if test $(hash brew 2>/dev/null)
+if test $(which brew)
 then
     # Run Homebrew through the Brewfile
     echo "› brew bundle"

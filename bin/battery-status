@@ -5,7 +5,7 @@
 # A quick little indicator for battery status on your Mac laptop, suitable for
 # display in your prompt.
 
-if test $(hash pmset 2>/dev/null)
+if test $(which pmset)
 then
   battstat=$(pmset -g batt)
   time_left=$(echo $battstat |

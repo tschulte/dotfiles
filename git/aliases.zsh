@@ -1,6 +1,6 @@
 # Use `hub` as our git wrapper:
 #   http://defunkt.github.com/hub/
-hub_path=$(hash hub 2>/dev/null)
+hub_path=$(which hub)
 if (( $+commands[hub] ))
 then
   alias git=$hub_path
