@@ -10,10 +10,10 @@ then
 
   echo "› sudo apt update && apt upgrade"
   sudo apt update
-  sudo apt upgrade
+  sudo apt upgrade -y
 
   echo "› installing required software"
-  sudo apt install \
+  sudo apt install -y \
     atom \
     autofs \
     bash-completion \
@@ -33,7 +33,7 @@ then
     oracle-java9-unlimited-jce-policy \
     vim \
     vnc4server \
-    wireshark-qt\
+    wireshark\
     xclip \
     zsh \
 
