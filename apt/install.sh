@@ -35,6 +35,7 @@ then
     vnc4server \
     wireshark\
     xclip \
+    zip \
     zsh \
 
 fi
