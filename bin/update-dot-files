@@ -13,7 +13,7 @@ $ZSH/bin/set-defaults
 $ZSH/homebrew/install.sh 2>&1
 
 # Try to install dependencies using apt
-$ZSH/apt/install.sh 2>&1
+$ZSH/apt/install.sh
 
 
 # if homebrew was installed
