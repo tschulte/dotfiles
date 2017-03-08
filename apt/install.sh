@@ -9,7 +9,8 @@ then
   sudo add-apt-repository -y ppa:benoit.pierre/plover
 
   echo "› sudo apt update && apt upgrade"
-  sudo apt update && apt upgrade
+  sudo apt update
+  sudo apt upgrade
 
   echo "› installing required software"
   sudo apt install \
