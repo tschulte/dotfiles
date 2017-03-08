@@ -2,7 +2,7 @@
 #
 # Sets defaults by running $ZSH/$os/set-defaults.sh.
 
-if [ "$(uname -s)" == "Darwin" ]
+if test "$(uname -s)" = "Darwin"
 then
   exec $ZSH/macos/set-defaults.sh
 fi
