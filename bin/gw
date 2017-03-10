@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# start Xvncserver for gui unit tests to not show
+if test -f /usr/bin/vncserver
+then
+  if test ! -f /tmp/.X1-lock
+  then
+    echo "starting xvnc"
+    /usr/bin/vncserver :1 -localhost -nolisten tcp
+  fi
+  export DISPLAY=:1
+fi
+
+$(upfind -name gradlew) $*
