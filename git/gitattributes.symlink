@@ -1,0 +1,2 @@
+*.jar binary diff=jar
+*.zip binary diff=jar

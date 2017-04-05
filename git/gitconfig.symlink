@@ -19,6 +19,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
+        attributesfile = ~/.gitattributes
         editor = vim
 [apply]
         whitespace = nowarn
