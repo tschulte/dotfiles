@@ -11,8 +11,8 @@ then
   export GIT_PS1_SHOWDIRTYSTATE=true
   export GIT_PS1_SHOWSTASHSTATE=true
   export GIT_PS1_SHOWUNTRACKEDFILES=true
-  export GIT_PS1_SHOWUPSTREAM="git verbose"
-  export GIT_PS1_DESCRIBE_STYLE="describe"
+  export GIT_PS1_SHOWUPSTREAM="verbose"
+  export GIT_PS1_DESCRIBE_STYLE="branch"
   export GIT_PS1_SHOWCOLORHINTS=true
   precmd() {
     title "zsh" "${PWD##*/}" "%55<...<%~"
