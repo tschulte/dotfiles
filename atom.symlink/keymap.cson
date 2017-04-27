@@ -1,5 +1,4 @@
 '.platform-win32, .platform-linux':
   'ctrl-shift-R': 'tree-view:reveal-active-file'
   'ctrl-shift-W': 'pane:close'
-'.platform-linux atom-workspace, .platform-win32 atom-workspace':
-  'ctrl-alt-T': 'terminal-plus:toggle'
+  'ctrl-shift-S': 'window:save-all'
