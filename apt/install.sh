@@ -31,6 +31,7 @@ then
     oracle-java8-unlimited-jce-policy \
     oracle-java9-installer \
     oracle-java9-unlimited-jce-policy \
+    terminator \
     vim \
     vnc4server \
     wireshark\
