@@ -25,8 +25,6 @@ then
     graphviz \
     intellij-idea-community \
     myrepos \
-    oracle-java7-installer \
-    oracle-java7-unlimited-jce-policy \
     oracle-java8-installer \
     oracle-java8-unlimited-jce-policy \
     oracle-java9-installer \
