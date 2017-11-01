@@ -24,6 +24,7 @@ then
     gitk \
     graphviz \
     intellij-idea-community \
+    kdiff3 \
     myrepos \
     oracle-java8-installer \
     oracle-java8-unlimited-jce-policy \
