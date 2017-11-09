@@ -1,4 +1,6 @@
 "*":
+  "atom-typing-speedometer":
+    showSecondAvg: true
   core:
     disabledPackages: [
       "background-tips"
