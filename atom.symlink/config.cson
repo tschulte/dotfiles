@@ -1,6 +1,9 @@
 "*":
   "atom-typing-speedometer":
     showSecondAvg: true
+  "autocomplete-plus":
+    enableAutoActivation: false
+    enableAutoConfirmSingleSuggestion: false
   core:
     disabledPackages: [
       "background-tips"
@@ -20,5 +23,7 @@
     softWrap: true
     softWrapHangingIndent: 8
     tabLength: 4
+  "linter-ui-default":
+    panelHeight: 69
   welcome:
     showOnStartup: false
