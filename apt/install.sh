@@ -33,6 +33,7 @@ then
     oracle-java9-installer \
     oracle-java9-unlimited-jce-policy \
     terminator \
+    ttf-ancient-fonts \
     vim \
     vnc4server \
     wireshark\

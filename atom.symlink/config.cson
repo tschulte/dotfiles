@@ -14,7 +14,7 @@
     hideGitIgnoredFiles: true
     telemetryConsent: "no"
   editor:
-    fontFamily: "Inconsolata"
+    fontFamily: "Inconsolata, Symbola"
     fontSize: 15
     invisibles: {}
     preferredLineLength: 120
