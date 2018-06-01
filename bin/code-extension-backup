@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Usage: code-extension-backup
+#
+# Saves a list of your currently installed vscode extensions to
+# ~/.dotfiles/vscode/extensions.txt suitable for install
+# via code-extension-install
+
+set -e
+
+code --list-extensions > ~/.dotfiles/vscode/extensions.txt
