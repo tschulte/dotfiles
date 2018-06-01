@@ -6,6 +6,7 @@ then
   sudo apt-add-repository -y ppa:webupd8team/atom
   sudo add-apt-repository -y ppa:mmk2410/intellij-idea
   sudo add-apt-repository -y ppa:benoit.pierre/plover
+  sudo add-apt-repository -y ppa:git-core/ppa
 
   echo "› sudo apt update && apt upgrade"
   sudo apt update
