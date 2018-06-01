@@ -1,6 +1,7 @@
 "*":
+  "asciidoc-preview": {}
   "atom-typing-speedometer":
-    showSecondAvg: true
+    showSecond: false
   "autocomplete-plus":
     enableAutoActivation: false
     enableAutoConfirmSingleSuggestion: false
@@ -15,7 +16,7 @@
     telemetryConsent: "no"
   editor:
     fontFamily: "Inconsolata, Symbola"
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
