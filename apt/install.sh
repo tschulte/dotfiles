@@ -3,7 +3,6 @@
 if test $(which apt)
 then
   echo "› adding repositories to apt"
-  sudo apt-add-repository -y ppa:webupd8team/java
   sudo apt-add-repository -y ppa:webupd8team/atom
   sudo add-apt-repository -y ppa:mmk2410/intellij-idea
   sudo add-apt-repository -y ppa:benoit.pierre/plover
@@ -28,10 +27,6 @@ then
     kdiff3 \
     moreutils \
     myrepos \
-    oracle-java8-installer \
-    oracle-java8-unlimited-jce-policy \
-    oracle-java9-installer \
-    oracle-java9-unlimited-jce-policy \
     terminator \
     ttf-ancient-fonts \
     vim \
