@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# switch from de neo to de
+setxkbmap de
