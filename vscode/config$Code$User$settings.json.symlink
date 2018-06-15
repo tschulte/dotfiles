@@ -1,7 +1,7 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "AsciiDoc.html_generator": "asciidoctor -r asciidoctor-diagram -o-",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "files.autoSave": "onWindowChange",
     "java.errors.incompleteClasspath.severity": "ignore"
 }
