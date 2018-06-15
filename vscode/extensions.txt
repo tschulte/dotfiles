@@ -1,3 +1,4 @@
+PeterJausovec.vscode-docker
 albintheander.typingspeed
 esbenp.prettier-vscode
 ithildir.java-properties
