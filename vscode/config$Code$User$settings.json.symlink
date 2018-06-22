@@ -1,16 +1,40 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "AsciiDoc.html_generator": "asciidoctor -r asciidoctor-diagram -o-",
-    "editor.formatOnSave": false,
-    "files.autoSave": "onWindowChange",
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
-    "editor.wordWrap": "on",
-    "editor.wrappingIndent": "deepIndent",
-    "editor.quickSuggestions": {
-        "other": false,
-        "comments": false,
-        "strings": false
-    },
-    "editor.suggestOnTriggerCharacters": false
+  "workbench.startupEditor": "newUntitledFile",
+  "AsciiDoc.asciidoctor_command": "asciidoctor -r asciidoctor-diagram -o -",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onWindowChange",
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "deepIndent",
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "tslint.autoFixOnSave": true,
+  "material-icon-theme.files.associations": {
+    "index.ts": "typescript-def",
+    "index.tsx": "typescript-def",
+    "types.ts": "typescript-def",
+    "d.ts": "typescript-def",
+    "*.messages.ts": "i18n",
+    "routes.tsx": "routing",
+    "*.adoc": "document"
+  },
+  "material-icon-theme.folders.associations": {
+    "testcafe": "test",
+    "modules": "plugin",
+    "cookbook": "test",
+    "leonardo": "tools",
+    "semantic-ui-styling": "less",
+    "jsonServer": "server"
+  },
+  "search.useGlobalIgnoreFiles": true,
+  "files.trimTrailingWhitespace": true,
+  "java.format.enabled": false
 }
