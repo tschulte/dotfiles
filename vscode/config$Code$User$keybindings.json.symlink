@@ -4,4 +4,8 @@
         "key": "ctrl+shift+w",
         "command": "workbench.action.closeAllEditors"
     },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.files.saveAll"
+    },
 ]
