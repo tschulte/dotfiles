@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# switch from de neo to us
+setxkbmap us
+
+echo "switched to us"

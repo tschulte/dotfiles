@@ -2,3 +2,5 @@
 
 # switch from de neo to de
 setxkbmap de
+
+echo "switched to de"
