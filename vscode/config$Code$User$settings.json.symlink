@@ -4,5 +4,13 @@
     "editor.formatOnSave": false,
     "files.autoSave": "onWindowChange",
     "java.errors.incompleteClasspath.severity": "ignore",
-    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}"
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "deepIndent",
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": false
 }
