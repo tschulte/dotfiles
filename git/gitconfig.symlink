@@ -42,7 +42,9 @@
 [log]
         mailmap = true
 [diff "jar"]
-        textconv = jar-dump
+	textconv = jar-dump
+[diff "image"]
+	command = git-imgdiff
 [rebase]
         autosquash = true
 [pull]

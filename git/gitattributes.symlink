@@ -1,2 +1,7 @@
 *.jar binary diff=jar
 *.zip binary diff=jar
+
+*.png binary diff=image
+*.gif binary diff=image
+*.jpg binary diff=image
+*.jpeg binary diff=image
