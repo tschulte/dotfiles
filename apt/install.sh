@@ -3,7 +3,6 @@
 if test $(which apt)
 then
   echo "› adding repositories to apt"
-  sudo apt-add-repository -y ppa:webupd8team/atom
   sudo add-apt-repository -y ppa:mmk2410/intellij-idea
   sudo add-apt-repository -y ppa:benoit.pierre/plover
   sudo add-apt-repository -y ppa:git-core/ppa
@@ -19,7 +18,6 @@ then
 
   echo "› installing required software"
   sudo apt install -y \
-    atom \
     autofs \
     bash-completion \
     code \
