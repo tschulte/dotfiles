@@ -9,6 +9,8 @@ then
   echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
   curl -sSL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  curl -sSL https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+  echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/chrome.list
 
   curl -sSL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
@@ -27,6 +29,7 @@ then
     git-flow \
     git-gui \
     gitk \
+    google-chrome-stable \
     graphviz \
     intellij-idea-community \
     kdiff3 \
