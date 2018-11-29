@@ -18,6 +18,9 @@ then
     title "zsh" "${PWD##*/}" "%55<...<%~"
     __git_ps1 "[%{$fg[red]%}$(date +%H:%M)%{$reset_color%}][%~" "]$ "
   }
+  preexec() {
+    title "zsh" "${PWD##*/}" "%55<...<%~" "$1"
+  }
 else
   # cheers, @ehrenmurdick
   # http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
