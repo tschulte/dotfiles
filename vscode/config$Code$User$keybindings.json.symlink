@@ -13,15 +13,22 @@
         "command": "workbench.action.navigateBack"
     },
     {
-        "key": "ctrl+alt+-",
-        "command": "-workbench.action.navigateBack"
-    },
-    {
         "key": "alt+right",
         "command": "workbench.action.navigateForward"
     },
     {
-        "key": "ctrl+shift+-",
-        "command": "-workbench.action.navigateForward"
+        "key": "ctrl+shift+t",
+        "command": "extension.jumpToTest",
+        "when": "editorTextFocus"
     },
+    {
+        "key": "ctrl+alt+down",
+        "command": "geeebe.duplicateText",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-geeebe.duplicateText",
+        "when": "editorTextFocus"
+    }
 ]

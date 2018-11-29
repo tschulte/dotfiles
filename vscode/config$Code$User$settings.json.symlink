@@ -36,5 +36,6 @@
   },
   "search.useGlobalIgnoreFiles": true,
   "files.trimTrailingWhitespace": true,
-  "java.format.enabled": false
+  "java.format.enabled": false,
+  "editor.mouseWheelZoom": true
 }
