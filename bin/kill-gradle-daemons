@@ -1,0 +1,3 @@
+#!/bin/sh
+
+jps -m 2> /dev/null | sed -nr "/[0-9]+ GradleDaemon/p" | sed "s/Gradle.*//" | xargs kill
