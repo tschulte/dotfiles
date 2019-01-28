@@ -37,5 +37,8 @@
   "search.useGlobalIgnoreFiles": true,
   "files.trimTrailingWhitespace": true,
   "java.format.enabled": false,
-  "editor.mouseWheelZoom": true
+  "editor.mouseWheelZoom": true,
+  "terminal.integrated.rendererType": "dom",
+  "runCurrentTest.run": "${workspaceRoot}/node_modules/.bin/jest ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\"",
+  "runCurrentTest.runAndUpdateSnapshots": "${workspaceRoot}/node_modules/.bin/jest -u ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\""
 }
