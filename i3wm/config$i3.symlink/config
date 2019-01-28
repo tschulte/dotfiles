@@ -230,4 +230,4 @@ exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-
 exec thunderbird
 exec pidgin
 
-exec --no-startup-id "i3-msg 'workspace 3: www; exec firefox; exec google-chrome'"
+exec --no-startup-id "i3-msg 'workspace 3; exec firefox; exec google-chrome'"
