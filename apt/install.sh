@@ -4,7 +4,6 @@ if test $(which apt)
 then
   echo "› adding repositories to apt"
   sudo add-apt-repository -y ppa:mmk2410/intellij-idea
-  sudo add-apt-repository -y ppa:benoit.pierre/plover
   sudo add-apt-repository -y ppa:git-core/ppa
   curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo apt-key add -
   echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
@@ -12,6 +11,10 @@ then
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
   curl -sSL https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+
+  /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb /tmp/keyring.deb SHA256:baa43dbbd7232ea2b5444cae238d53bebb9d34601cc000e82f11111b1889078a
+  sudo dpkg -i /tmp/keyring.deb
+  echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/i3.list
 
   curl -sSL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
