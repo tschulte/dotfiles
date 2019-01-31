@@ -45,6 +45,7 @@ then
     i3lock \
     kdiff3 \
     libanyevent-i3-perl \
+    libpurple-bin \
     moreutils \
     myrepos \
     nodejs \

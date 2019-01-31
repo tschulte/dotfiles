@@ -1,0 +1,26 @@
+#!/bin/bash
+
+STATUS=`purple-remote getstatus`
+if [ $? != 0 ]
+then
+  echo ""
+  exit 0
+fi
+
+STATUS_MESSAGE=`purple-remote getstatusmessage`
+NEXT_STATUS="available"
+if [ "$STATUS" = "available" ]
+then
+  NEXT_STATUS="away"
+fi
+
+case $BLOCK_BUTTON in
+  1) purple-remote "setstatus?status=$NEXT_STATUS" ;; # click, change status
+esac
+
+purple-remote getstatus getstatusmessage | paste -sd " " -
+
+# Set urgent flag when not available
+[ "$(purple-remote getstatus)" != "available" ] && exit 33
+
+exit 0
