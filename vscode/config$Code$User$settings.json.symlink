@@ -1,7 +1,6 @@
 {
   "workbench.startupEditor": "newUntitledFile",
   "AsciiDoc.asciidoctor_command": "asciidoctor -r asciidoctor-diagram -o -",
-  "editor.formatOnSave": true,
   "files.autoSave": "onWindowChange",
   "java.errors.incompleteClasspath.severity": "ignore",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
@@ -40,5 +39,6 @@
   "editor.mouseWheelZoom": true,
   "terminal.integrated.rendererType": "dom",
   "runCurrentTest.run": "${workspaceRoot}/node_modules/.bin/jest ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\"",
-  "runCurrentTest.runAndUpdateSnapshots": "${workspaceRoot}/node_modules/.bin/jest -u ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\""
+  "runCurrentTest.runAndUpdateSnapshots": "${workspaceRoot}/node_modules/.bin/jest -u ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\"",
+  "editor.dragAndDrop": false
 }
