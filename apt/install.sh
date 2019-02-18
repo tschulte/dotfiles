@@ -29,6 +29,7 @@ then
     bash-completion \
     code \
     docker.io \
+    docker-compose \
     dos2unix \
     dunst \
     fonts-inconsolata \
