@@ -40,5 +40,13 @@
   "terminal.integrated.rendererType": "dom",
   "runCurrentTest.run": "${workspaceRoot}/node_modules/.bin/jest ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\"",
   "runCurrentTest.runAndUpdateSnapshots": "${workspaceRoot}/node_modules/.bin/jest -u ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\"",
-  "editor.dragAndDrop": false
+  "editor.dragAndDrop": false,
+  "git.autofetch": true,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  }
 }
