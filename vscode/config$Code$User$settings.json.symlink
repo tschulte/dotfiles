@@ -42,7 +42,6 @@
   "runCurrentTest.runAndUpdateSnapshots": "${workspaceRoot}/node_modules/.bin/jest -u ${relativeTestPath} --runTestsByPath --testNamePattern \"${fullTestName}\"",
   "editor.dragAndDrop": false,
   "git.autofetch": true,
-  "editor.formatOnSave": true,
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
