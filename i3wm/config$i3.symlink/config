@@ -221,6 +221,7 @@ workspace 19 output Virtual3
 workspace 23 output Virtual3
 
 # for_window [instance="sun-awt-X11-XFramePeer" class="sun-launcher-LauncherHelper\$FXHelper|com-sun-javaws-Main"] floating enable
+for_window [instance="teensy" class="Teensy"] floating enable
 
 # start the following apps on startup
 exec mintupdate-launcher
