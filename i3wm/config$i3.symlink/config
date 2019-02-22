@@ -226,11 +226,4 @@ for_window [instance="teensy" class="Teensy"] floating enable
 # start the following apps on startup
 exec mintupdate-launcher
 
-# load default layout for workspace 1 and start the applications of that workspace
-exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json'"
-exec thunderbird
-exec pidgin
-
-exec --no-startup-id "i3-msg 'workspace 3; exec firefox'"
-exec --no-startup-id "i3-msg 'workspace 6; exec google-chrome'"
 exec --no-startup-id "i3-msg 'exec setxkbmap de neo'"
