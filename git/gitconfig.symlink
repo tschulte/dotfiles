@@ -46,7 +46,8 @@
 [diff "image"]
 	command = git-imgdiff
 [rebase]
-        autosquash = true
+	autosquash = true
+	autostash = true
 [pull]
         rebase = preserve
 [push]
