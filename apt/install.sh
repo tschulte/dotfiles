@@ -23,7 +23,7 @@ then
   sudo apt upgrade -y
 
   echo "› installing required software"
-  sudo apt install -y \
+  sudo apt install -y -m \
     acpi \
     autofs \
     bash-completion \
