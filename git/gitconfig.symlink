@@ -44,11 +44,14 @@
 	textconv = jar-dump
 [diff "image"]
 	command = git-imgdiff
+[diff "pdf"]
+	command = git-diffpdf
+	textconv = git-pdftotext
 [rebase]
 	autosquash = true
 	autostash = true
 [pull]
-        rebase = preserve
+        rebase = merges
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.

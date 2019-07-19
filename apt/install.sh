@@ -28,6 +28,7 @@ then
     autofs \
     bash-completion \
     code \
+    diffpdf \
     docker.io \
     docker-compose \
     dos2unix \
