@@ -197,11 +197,11 @@ focus_follows_mouse no
 hide_edge_borders smart
 
 workspace 1 output Virtual2
-workspace 4 output Virtual2
+workspace 4 output Virtual4
 workspace 7 output Virtual2
-workspace 11 output Virtual2
+workspace 11 output Virtual4
 workspace 14 output Virtual2
-workspace 17 output Virtual2
+workspace 17 output Virtual4
 workspace 21 output Virtual2
 
 workspace 2 output Virtual1
