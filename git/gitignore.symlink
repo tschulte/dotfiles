@@ -6,5 +6,6 @@
 .settings/
 .project
 .classpath
-*/bin/main/
-*/bin/test/
+**/bin/main/
+**/bin/test/
+**/bin/other/

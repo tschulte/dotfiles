@@ -222,8 +222,10 @@ workspace 23 output Virtual3
 
 # for_window [instance="sun-awt-X11-XFramePeer" class="sun-launcher-LauncherHelper\$FXHelper|com-sun-javaws-Main"] floating enable
 for_window [instance="teensy" class="Teensy"] floating enable
+for_window [title="Plover: Suggestions"] sticky enable
+for_window [title="Plover: Strokes Meter"] sticky enable
+for_window [title="Plover: WPM Meter"] sticky enable
 
 # start the following apps on startup
-exec mintupdate-launcher
-
+exec plover
 exec --no-startup-id "i3-msg 'exec setxkbmap de neo'"

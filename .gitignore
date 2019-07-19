@@ -14,4 +14,5 @@ git/gitconfig.local.symlink
 
 plover/local$share$plover.symlink/.cache
 plover/local$share$plover.symlink/plugins
-plover/local$share$plover.symlink/*.log
+plover/local$share$plover.symlink/*.log*
+

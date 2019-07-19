@@ -37,10 +37,9 @@
         autoupdate = true
 [gui]
         encoding = utf-8
-        fontui = -family \"DejaVu Sans\" -size 8 -weight normal -slant roman -underline 0 -overstrike 0
-        fontdiff = -family \"DejaVu Sans Mono\" -size 8 -weight normal -slant roman -underline 0 -overstrike 0
 [log]
         mailmap = true
+        date = iso
 [diff "jar"]
 	textconv = jar-dump
 [diff "image"]
