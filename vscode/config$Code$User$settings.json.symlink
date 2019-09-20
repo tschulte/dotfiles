@@ -106,5 +106,6 @@
       "value": "#42b883"
     }
   ],
-  "svn.enableProposedApi": "product"
+  "svn.enableProposedApi": "product",
+  "editor.fontLigatures": true
 }

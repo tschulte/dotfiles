@@ -34,6 +34,7 @@ then
     dos2unix \
     dunst \
     fonts-inconsolata \
+    fonts-firacode \
     git \
     git-flow \
     git-gui \
