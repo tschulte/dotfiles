@@ -107,5 +107,9 @@
     }
   ],
   "svn.enableProposedApi": "product",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
   "editor.fontLigatures": true
 }
