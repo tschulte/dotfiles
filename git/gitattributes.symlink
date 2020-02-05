@@ -2,6 +2,7 @@
 *.zip binary diff=jar
 *.xls binary diff=excel
 *.xlsx binary diff=excel
+*.pdf binary diff=pdf
 
 *.png binary diff=image
 *.gif binary diff=image
