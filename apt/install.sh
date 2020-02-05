@@ -3,7 +3,8 @@
 if test $(which apt)
 then
   echo "› adding repositories to apt"
-  sudo add-apt-repository -y ppa:mmk2410/intellij-idea
+  curl -s https://s3.eu-central-1.amazonaws.com/jetbrains-ppa/0xA6E8698A.pub.asc | sudo apt-key add -
+  echo "deb http://jetbrains-ppa.s3-website.eu-central-1.amazonaws.com bionic main" | sudo tee /etc/apt/sources.list.d/jetbrains-ppa.list > /dev/null
   sudo add-apt-repository -y ppa:git-core/ppa
   curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo apt-key add -
   echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
@@ -14,9 +15,10 @@ then
 
   /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2019.02.01_all.deb /tmp/keyring.deb SHA256:176af52de1a976f103f9809920d80d02411ac5e763f695327de9fa6aff23f416
   sudo dpkg -i /tmp/keyring.deb
-  echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/i3.list
+  #echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/i3.list
+  echo "deb http://debian.sur5r.net/i3/ bionic universe" | sudo tee /etc/apt/sources.list.d/i3.list
 
-  curl -sSL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+  curl -sSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
   echo "› sudo apt update && apt upgrade"
   sudo apt update
@@ -25,6 +27,7 @@ then
   echo "› installing required software"
   sudo apt install -y -m \
     acpi \
+    asciinema \
     autofs \
     bash-completion \
     code \
@@ -43,15 +46,18 @@ then
     google-chrome-stable \
     graphviz \
     intellij-idea-community \
+    imagemagick \
     i3 \
     i3blocks \
     i3lock \
     kdiff3 \
     libanyevent-i3-perl \
     libpurple-bin \
+    meld \
     moreutils \
     myrepos \
     nodejs \
+    perl-doc \
     speedcrunch \
     subversion-tools \
     suckless-tools \
@@ -59,7 +65,7 @@ then
     terminator \
     ttf-ancient-fonts \
     vim \
-    vnc4server \
+    x11vnc \
     wireshark\
     xclip \
     xul-ext-lightning \
