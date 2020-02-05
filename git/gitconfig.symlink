@@ -47,6 +47,8 @@
 [diff "pdf"]
 	command = git-diffpdf
 	textconv = git-pdftotext
+[diff "excel"]
+	command = git-excel_cmp
 [rebase]
 	autosquash = true
 	autostash = true
