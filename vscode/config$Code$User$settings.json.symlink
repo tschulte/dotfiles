@@ -43,10 +43,10 @@
   "editor.dragAndDrop": false,
   "git.autofetch": true,
   "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
+    "**/.classpath": false,
+    "**/.project": false,
+    "**/.settings": false,
+    "**/.factorypath": false
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -106,10 +106,23 @@
       "value": "#42b883"
     }
   ],
-  "svn.enableProposedApi": "product",
-  "[typescript]": {
+  "editor.fontLigatures": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "sonarlint.connectedMode.servers": [
+    {
+      "serverId": "g3-sonar-1",
+      "serverUrl": "http://g3-sonar-1.kratzer.lan",
+      "token": "1d919426287d2f4dcdebfb5923c89d478a463904"
+    }
+  ],
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
-  "editor.fontLigatures": true
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "'monospace', monospace, 'Droid Sans Mono', 'Droid Sans Fallback'",
+  "editor.formatOnSave": true
 }

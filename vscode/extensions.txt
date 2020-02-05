@@ -16,7 +16,6 @@ DotJoshJohnson.xml
 eamodio.gitlens
 eamodio.toggle-excluded-files
 EditorConfig.EditorConfig
-eg2.tslint
 esbenp.prettier-vscode
 evilz.vscode-reveal
 firsttris.vscode-jest-runner
@@ -37,12 +36,14 @@ mrcrowl.hg
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.cpptools
+ms-vscode.vscode-typescript-tslint-plugin
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
 msjsdiag.debugger-for-chrome
 naco-siren.gradle-language
 npxms.hide-gitignored
+Pivotal.vscode-spring-boot
 PKief.material-icon-theme
 pverest.java-ide-pack
 redhat.java
@@ -51,6 +52,7 @@ rtbenfield.vscode-jest-test-adapter
 SatakeRyota.asciidoc-icon-snippets
 shengchen.vscode-checkstyle
 slevesque.vscode-zipexplorer
+SonarSource.sonarlint-vscode
 stevejpurves.cucumber
 stubailo.ignore-gitignore
 VisualStudioExptTeam.vscodeintellicode
@@ -59,6 +61,8 @@ vscjava.vscode-java-dependency
 vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
+vscjava.vscode-spring-boot-dashboard
+vscjava.vscode-spring-initializr
 vscode-icons-team.vscode-icons
 YouMayCallMeV.vscode-java-saber
 ziyasal.vscode-open-in-github
