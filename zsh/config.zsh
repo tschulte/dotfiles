@@ -31,6 +31,8 @@ setopt HIST_IGNORE_SPACE # don't record lines prepended with a space
 #   like: git comm-[tab]
 setopt complete_aliases
 
+bindkey -e
+
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
 
@@ -38,7 +40,15 @@ bindkey '^[^[[C' forward-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
+bindkey "^[[1;3H" beginning-of-line
+bindkey "^[[1;5H" beginning-of-line
+bindkey "^[[H" beginning-of-line
+bindkey "^[[1;3F" end-of-line
+bindkey "^[[1;5F" end-of-line
+bindkey "^[[F" end-of-line
+
 bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+bindkey '^H' backward-kill-word

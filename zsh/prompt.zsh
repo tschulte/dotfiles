@@ -5,9 +5,14 @@ battery_status() {
   $ZSH/bin/battery-status
 }
 
-if [[ -e /usr/lib/git-core/git-sh-prompt ]]
+if [[ -e /usr/lib/git-core/git-sh-prompt || -e /usr/share/git/git-prompt.sh ]]
 then
-  source /usr/lib/git-core/git-sh-prompt
+  if [[ -e /usr/lib/git-core/git-sh-prompt ]]
+  then
+    source /usr/lib/git-core/git-sh-prompt
+  else
+    source /usr/share/git/git-prompt.sh
+  fi
   export GIT_PS1_SHOWDIRTYSTATE=true
   export GIT_PS1_SHOWSTASHSTATE=true
   export GIT_PS1_SHOWUNTRACKEDFILES=true
