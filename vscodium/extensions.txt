@@ -3,6 +3,7 @@ albintheander.typingspeed
 alefragnani.project-manager
 alexkrechik.cucumberautocomplete
 andys8.jest-snippets
+asciidoctor.asciidoctor-vscode
 asvetliakov.run-current-test
 asvetliakov.snapshot-tools
 blakeh.jump-to-test
@@ -20,7 +21,10 @@ esbenp.prettier-vscode
 evilz.vscode-reveal
 firsttris.vscode-jest-runner
 geeebe.duplicate
+GitLab.gitlab-workflow
+hbenl.test-adapter-converter
 hbenl.vscode-test-explorer
+hediet.vscode-drawio
 henoc.svgeditor
 ithildir.java-properties
 joaompinto.asciidoctor-vscode
@@ -35,6 +39,7 @@ mkloubert.vscode-kanban
 mrcrowl.hg
 ms-azuretools.vscode-docker
 ms-python.python
+ms-toolsai.jupyter
 ms-vscode.cpptools
 ms-vscode.vscode-typescript-tslint-plugin
 ms-vsliveshare.vsliveshare
@@ -43,10 +48,14 @@ ms-vsliveshare.vsliveshare-pack
 msjsdiag.debugger-for-chrome
 naco-siren.gradle-language
 npxms.hide-gitignored
+Orta.vscode-jest
 Pivotal.vscode-spring-boot
 PKief.material-icon-theme
 pverest.java-ide-pack
 redhat.java
+redhat.vscode-commons
+redhat.vscode-xml
+redhat.vscode-yaml
 romanresh.testcafe-test-runner
 rtbenfield.vscode-jest-test-adapter
 SatakeRyota.asciidoc-icon-snippets
@@ -54,6 +63,7 @@ shengchen.vscode-checkstyle
 slevesque.vscode-zipexplorer
 SonarSource.sonarlint-vscode
 stevejpurves.cucumber
+streetsidesoftware.code-spell-checker
 stubailo.ignore-gitignore
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
@@ -64,5 +74,6 @@ vscjava.vscode-maven
 vscjava.vscode-spring-boot-dashboard
 vscjava.vscode-spring-initializr
 vscode-icons-team.vscode-icons
+vsls-contrib.codetour
 YouMayCallMeV.vscode-java-saber
 ziyasal.vscode-open-in-github

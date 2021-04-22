@@ -3,7 +3,7 @@
   "AsciiDoc.asciidoctor_command": "asciidoctor -r asciidoctor-diagram -o -",
   "files.autoSave": "onWindowChange",
   "java.errors.incompleteClasspath.severity": "ignore",
-  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+  "window.title": "${rootName}${separator}${dirty}${activeEditorMedium}${separator}${appName}",
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "deepIndent",
   "editor.quickSuggestions": {
@@ -45,17 +45,16 @@
   "files.exclude": {
     "**/.classpath": false,
     "**/.factorypath": false,
-    "**/.gradle/": true,
-    "**/.idea/": true,
+    "**/.gradle/": false,
+    "**/.idea/": false,
     "**/.project": false,
     "**/.settings": false,
-    "**/.vscode/": true,
-    "**/build/": true
+    "**/.vscode/": false,
+    "**/build/": false
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
-  "window.titleBarStyle": "custom",
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
@@ -114,8 +113,7 @@
   "sonarlint.connectedMode.connections.sonarqube": [
     {
       "connectionId": "g3-sonar-1",
-      "serverUrl": "http://g3-sonar-1.kratzer.lan",
-      "token": "1d919426287d2f4dcdebfb5923c89d478a463904"
+      "serverUrl": "http://g3-sonar-1"
     }
   ],
   "[json]": {
@@ -125,12 +123,15 @@
   "sonarlint.rules": {
     "typescript:S1440": {
       "level": "on"
+    },
+    "typescript:S3358": {
+      "level": "off"
     }
   },
   "liveshare.featureSet": "insiders",
-  "gitlab.instanceUrl": "http://la-gitlab.kratzer.lan",
+  "gitlab.instanceUrl": "http://la-gitlab",
   "java.semanticHighlighting.enabled": true,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
   "java.home": "/usr/lib/jvm/java-11-openjdk",
   "java.project.importHint": false,
   "[typescriptreact]": {
@@ -140,8 +141,30 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjoyNDAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
-  "editor.columnSelection": false,
   "editor.formatOnSave": true,
   "svg.preview.mode": "svg",
   "editor.copyWithSyntaxHighlighting": false,
+  "jest.autoEnable": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "cSpell.userWords": [
+    "Dexie",
+    "Masterdata",
+    "redispatch",
+    "Ruleengine",
+    "runsheet",
+    "SEMITRUCK",
+    "servlet",
+    "telematic",
+    "Timeslot",
+    "tsyringe",
+    "untouch",
+    "validatable"
+  ],
+  "window.titleBarStyle": "custom",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
