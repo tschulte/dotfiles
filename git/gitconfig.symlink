@@ -22,6 +22,7 @@
         excludesfile = ~/.gitignore
         attributesfile = ~/.gitattributes
         editor = vim
+	pager = less -S
 [apply]
         whitespace = nowarn
 [merge]
