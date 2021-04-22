@@ -29,6 +29,9 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# default to tabbed layout
+workspace_layout tabbed
+
 # start a terminal
 bindsym $mod+Return exec terminator
 
@@ -41,6 +44,7 @@ bindsym $mod+Shift+x kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 bindsym $mod+a exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+Shift+a exec --no-startup-id morc_menu
 
 # change focus
 bindsym $mod+n focus left
@@ -232,29 +236,34 @@ bar {
 focus_follows_mouse no
 hide_edge_borders smart
 
-workspace 1 output Virtual2
-workspace 4 output Virtual4
-workspace 7 output Virtual4
-workspace 11 output Virtual4
-workspace 14 output Virtual4
-workspace 17 output Virtual4
-workspace 21 output Virtual4
+set $monitor0 Virtual2
+set $monitor1 Virtual3
+set $monitor2 Virtual1
+set $monitor3 Virtual4
 
-workspace 2 output Virtual1
-workspace 5 output Virtual1
-workspace 8 output Virtual1
-workspace 12 output Virtual1
-workspace 15 output Virtual1
-workspace 18 output Virtual1
-workspace 22 output Virtual1
+workspace 1 output $monitor0
+workspace 4 output $monitor1
+workspace 7 output $monitor1
+workspace 11 output $monitor1
+workspace 14 output $monitor1
+workspace 17 output $monitor1
+workspace 21 output $monitor1
 
-workspace 3 output Virtual3
-workspace 6 output Virtual3
-workspace 9 output Virtual3
-workspace 13 output Virtual3
-workspace 16 output Virtual3
-workspace 19 output Virtual3
-workspace 23 output Virtual3
+workspace 2 output $monitor2
+workspace 5 output $monitor2
+workspace 8 output $monitor2
+workspace 12 output $monitor2
+workspace 15 output $monitor2
+workspace 18 output $monitor2
+workspace 22 output $monitor2
+
+workspace 3 output $monitor3
+workspace 6 output $monitor3
+workspace 9 output $monitor3
+workspace 13 output $monitor3
+workspace 16 output $monitor3
+workspace 19 output $monitor3
+workspace 23 output $monitor3
 
 # for_window [instance="sun-awt-X11-XFramePeer" class="sun-launcher-LauncherHelper\$FXHelper|com-sun-javaws-Main"] floating enable
 for_window [instance="teensy" class="Teensy"] floating enable
@@ -263,14 +272,15 @@ for_window [title="Plover: Strokes Meter"] sticky enable
 for_window [title="Plover: WPM Meter"] sticky enable
 for_window [class="Yad"] floating enable
 for_window [title="alsamixer"] floating enable
+#for_window [title="Welcome to IntelliJ IDEA"] floating enable
 
 
 # start the following apps on startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id plover
-exec --no-startup-id setxkbmap de neo
-exec --no-startup-id xinput set-prop 10 "libinput Middle Emulation Enabled" 1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id setxkbmap de
+exec --no-startup-id xinput list --id-only | xargs -n1 -i xinput set-prop {} "libinput Middle Emulation Enabled" 1
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
