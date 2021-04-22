@@ -17,6 +17,7 @@ then
     docker \
     docker-compose \
     dos2unix \
+    espeak \
     evince \
     firefox \
     ttf-inconsolata \

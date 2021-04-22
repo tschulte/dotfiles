@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# see https://mob.sh/#linux-timer
+espeak -v english "$@"
