@@ -12,7 +12,6 @@ then
     base-devel \
     bash-completion \
     chromium \
-    code \
     diffpdf \
     docker \
     docker-compose \
@@ -20,23 +19,24 @@ then
     espeak \
     evince \
     firefox \
-    ttf-inconsolata \
-    ttf-fira-code \
     git \
     graphviz \
-    intellij-idea-community-edition \
-    i3blocks \
     i3-scrot \
+    i3blocks \
+    intellij-idea-community-edition \
     kdiff3 \
     meld \
     moreutils \
+    noto-fonts-emoji \
     playerctl \
     speedcrunch \
     sysstat \
     teensy-loader-cli \
     terminator \
+    tigervnc \
     tk \
-    x11vnc \
+    ttf-fira-code \
+    ttf-inconsolata \
     wireshark-qt \
     xclip \
     xdotool \
@@ -44,14 +44,14 @@ then
     zip \
 
     aur_packages=()
-    for package in gnome-commander myrepos nvm proxyman-git yed
+    for package in github-cli gnome-commander myrepos nvm plover-git plover_plugins_manager proxyman-git vscodium yed
     do
       if ! $(pacman -Qi $package > /dev/null 2>&1)
       then
         aur_packages+=($package)
       fi
     done
-    if test $aur_packages
+    if test ${#aur_packages[@]} -gt 0
     then
       pamac build --no-confirm $aur_packages
     fi
