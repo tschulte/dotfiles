@@ -1,5 +1,5 @@
 PLOVER_VERSION_PREFIX="4.0.0.dev8"
-PLOVER_VERSION_POSTFIX="66.g685bd33"
+PLOVER_VERSION_POSTFIX="454.g378848a"
 PLOVER_VERSION_DOT="${PLOVER_VERSION_PREFIX}.${PLOVER_VERSION_POSTFIX}"
 PLOVER_VERSION_PLUS="${PLOVER_VERSION_PREFIX}+${PLOVER_VERSION_POSTFIX}"
 PLOVER_APPIMAGE_NAME="plover-${PLOVER_VERSION_DOT}-x86_64.AppImage"
@@ -11,3 +11,12 @@ curl -sSL "$PLOVER_URL" > "/tmp/${PLOVER_APPIMAGE_NAME}"
 chmod uga+x /tmp/${PLOVER_APPIMAGE_NAME}
 /tmp/${PLOVER_APPIMAGE_NAME} --install
 rm "/tmp/${PLOVER_APPIMAGE_NAME}"
+
+
+if test -d ~/.steno-dictionaries
+then
+  echo "updating steno-dictionaries"
+  (cd ~/.steno-dictionaries && git pull)
+else
+  git clone gh://didoesdigital/steno-dictionaries ~/.steno-dictionaries
+fi

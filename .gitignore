@@ -12,7 +12,7 @@ atom.symlink/nohup.out
 
 git/gitconfig.local.symlink
 
-plover/local$share$plover.symlink/.cache
-plover/local$share$plover.symlink/plugins
-plover/local$share$plover.symlink/*.log*
+plover/config$plover.symlink/.cache
+plover/config$plover.symlink/plugins
+plover/config$plover.symlink/*.log*
 
