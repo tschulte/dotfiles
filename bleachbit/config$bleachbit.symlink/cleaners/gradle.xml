@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cleaner id="gradle">
+  <label>Gradle</label>
+  <description>Gradle files</description>
+  <option id="user">
+    <label>User</label>
+    <description>Clean user files</description>
+    <action search="walk.all" command="delete" path="~/.gradle" wholeregex="\/(caches|completion|daemon|jdks|native|notifications|task-cache|workers|wrapper)(\/|$)"/>
+  </option>
+  <option id="project">
+    <label>Project</label>
+    <description>Clean project build files</description>
+    <action search="walk.all" command="delete" path="~/projects" wholeregex="\/(build|\.gradle)(\/|$)"/>
+  </option>
+</cleaner>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cleaner id="yarn">
+  <label>Yarn</label>
+  <description>Yarn Files</description>
+  <option id="project">
+    <label>Project</label>
+    <description>Clean Project build files</description>
+    <action search="walk.all" command="delete" path="~/projects" wholeregex="\/(node_modules|\.fusebox)(\/|$)"/>
+  </option>
+</cleaner>

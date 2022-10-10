@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cleaner id="intellij">
+  <label>IntelliJ</label>
+  <description>IntelliJ</description>
+  <option id="project">
+    <label>Project</label>
+    <description>Clean project build files</description>
+    <action search="walk.all" command="delete" path="~/projects" wholeregex="\/(out\/(production|test))(\/|$)"/>
+  </option>
+</cleaner>

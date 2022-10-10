@@ -2,6 +2,8 @@
 *~
 *.swp
 
+.idea/
+
 .vscode/
 .settings/
 .project
@@ -9,3 +11,9 @@
 **/bin/main/
 **/bin/test/
 **/bin/other/
+**/src/main/generated/
+**/src/test/generated_tests/
+
+checkouts/
+profile-out*/
+gradle-user-home/

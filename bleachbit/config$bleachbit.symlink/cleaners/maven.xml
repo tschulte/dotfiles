@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cleaner id="maven">
+  <label>Maven</label>
+  <description>Maven files</description>
+  <option id="user">
+    <label>User</label>
+    <description>Clean user files</description>
+    <action search="walk.all" command="delete" path="~/.m2" wholeregex="\/(wrapper|repository)(\/|$)"/>
+  </option>
+  <option id="project">
+    <label>Project</label>
+    <description>Clean project build files</description>
+    <action search="walk.all" command="delete" path="~/projects" wholeregex="\/target(\/|$)"/>
+  </option>
+</cleaner>

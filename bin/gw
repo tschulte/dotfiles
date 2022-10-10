@@ -1,14 +1,15 @@
 #!/bin/sh
 
 # start Xvncserver for gui unit tests to not show
-if test -e /usr/bin/vncserver
+# but don't start Xvncserver when launching the gui
+if [[ -e /usr/bin/vncserver && ! "$*" =~ "run" ]]
 then
-  if test ! -e /tmp/.X11-unix/X1
+  if [[ ! -e /tmp/.X11-unix/X1 ]]
   then
     echo "starting xvnc"
     /usr/bin/vncserver :1 -localhost -nolisten tcp
   fi
-  if test -e /tmp/.X11-unix/X1
+  if [[ -e /tmp/.X11-unix/X1 ]]
   then
     export DISPLAY=:1
   fi

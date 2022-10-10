@@ -1,0 +1,5 @@
+[DEFAULT]
+git = git $@
+glab = glab $@
+gw = gw $@
+jobs = 5

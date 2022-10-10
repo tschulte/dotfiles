@@ -26,9 +26,9 @@
 [apply]
         whitespace = nowarn
 [merge]
-        renormalize = true
+#        renormalize = true
         conflictstyle = diff3
-        tool = meld
+        tool = kdiff3
 [mergetool]
         keepBackup = false
         keepTemporaries = false
@@ -55,7 +55,7 @@
 	autosquash = true
 	autostash = true
 [pull]
-        rebase = merges
+	rebase = merges
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.
@@ -66,3 +66,6 @@
 	insteadOf = gh://
 [init]
 	defaultBranch = main
+
+[advice]
+	skippedCherryPicks = false

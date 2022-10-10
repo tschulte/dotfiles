@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mr git shortstatus | sed -e "s/^mr git: .*\/\(.*\)$/\1/" -e :a -e "s/^.\{1,30\}$/& /;ta" | sed ":label1 ; N ; \$! b label1 ; s/\([^\w]\)\n\([^\w]\)/\1 \2/g"
