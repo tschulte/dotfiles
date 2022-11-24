@@ -28,6 +28,7 @@ then
     i3blocks \
     intellij-idea-community-edition \
     kdiff3 \
+    lsof \
     mariadb \
     mariadb-clients \
     meld \
@@ -35,6 +36,7 @@ then
     noto-fonts-emoji \
     playerctl \
     rng-tools \
+    simplescreenrecorder \
     speedcrunch \
     sysstat \
     teensy-loader-cli \
@@ -54,6 +56,8 @@ then
     for package in \
       eclipse-mat \
       gnome-commander \
+      mbrola-voices-us1 \
+      mobsh-bin \
       myrepos \
       nvm \
       pdfx \

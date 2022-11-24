@@ -41,9 +41,6 @@ done
 
 unset config_files
 
-export YVM_DIR=/home/schulte/.yvm
-[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
-
 unset http_proxy
 unset ftp_proxy
 unset rsync_proxy
