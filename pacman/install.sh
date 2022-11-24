@@ -46,11 +46,15 @@ then
     translate-toolkit \
     ttf-fira-code \
     ttf-inconsolata \
+    unzip \
     wireshark-qt \
     xclip \
     xdotool \
     yad \
     zip \
+    zsh \
+    zsh-autosuggestions \
+    zsh-completions \
 
     aur_packages=()
     for package in \
