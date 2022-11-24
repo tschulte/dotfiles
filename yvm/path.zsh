@@ -1,4 +1,4 @@
-if test ! -s ~/.yvm/yvm.sh
+if [[ -e ~/.yvm/yvm.sh ]]
 then
   source ~/.yvm/yvm.sh
 fi
