@@ -5,9 +5,11 @@ then
   echo "› installing required software"
   sudo pacman -Syu --needed --noconfirm \
     acpi \
+    ardour \
     asciinema \
     aspell-de \
     aspell-en \
+    audacity \
     avr-libc \
     base-devel \
     bash-completion \
@@ -17,13 +19,14 @@ then
     docker \
     docker-compose \
     dos2unix \
-    espeak \
+    espeak-ng \
     evince \
     firefox \
     git \
     github-cli \
     glab \
     graphviz \
+    guitarix \
     i3-scrot \
     i3blocks \
     intellij-idea-community-edition \
@@ -35,12 +38,17 @@ then
     moreutils \
     noto-fonts-emoji \
     playerctl \
+    qjackctl \
+    realtime-privileges \
     rng-tools \
     simplescreenrecorder \
     speedcrunch \
     sysstat \
     teensy-loader-cli \
     terminator \
+    texlive-core \
+    texlive-fontsextra \
+    texlive-latexextra \
     tigervnc \
     tk \
     translate-toolkit \
