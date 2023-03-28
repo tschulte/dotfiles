@@ -37,6 +37,7 @@ then
     mariadb \
     mariadb-clients \
     meld \
+    morc_menu \
     moreutils \
     myrepos \
     neovim \
