@@ -29,6 +29,7 @@ then
     guitarix \
     i3-scrot \
     i3blocks \
+    i3exit \
     i3-wm \
     intellij-idea-community-edition \
     kdiff3 \
