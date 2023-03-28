@@ -29,6 +29,7 @@ then
     guitarix \
     i3-scrot \
     i3blocks \
+    i3-wm \
     intellij-idea-community-edition \
     kdiff3 \
     lsof \
@@ -36,6 +37,8 @@ then
     mariadb-clients \
     meld \
     moreutils \
+    myrepos \
+    neovim \
     noto-fonts-emoji \
     playerctl \
     qjackctl \
@@ -70,15 +73,15 @@ then
       gnome-commander \
       mbrola-voices-us1 \
       mobsh-bin \
-      myrepos \
       nvm \
       pdfx \
       plover_plugins_manager \
       plover-git \
       proxyman-git \
       tuxguitar \
-      vscodium \
-      yed
+      vscodium-bin \
+#      yed \
+
     do
       if ! $(pacman -Qi $package > /dev/null 2>&1)
       then
@@ -87,7 +90,7 @@ then
     done
     if test ${#aur_packages[@]} -gt 0
     then
-      pamac build --no-confirm $aur_packages
+      pamac build --no-confirm ${aur_packages[@]}
     fi
 
     # TODO:
