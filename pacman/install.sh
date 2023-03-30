@@ -82,7 +82,7 @@ then
       proxyman-git \
       tuxguitar \
       vscodium-bin \
-#      yed \
+      yed \
 
     do
       if ! $(pacman -Qi $package > /dev/null 2>&1)
