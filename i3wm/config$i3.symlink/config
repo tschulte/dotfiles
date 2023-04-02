@@ -236,10 +236,10 @@ bar {
 focus_follows_mouse no
 hide_edge_borders smart
 
-set $monitor0 Virtual2
-set $monitor1 Virtual3
+set $monitor0 Virtual3
+set $monitor1 Virtual4
 set $monitor2 Virtual1
-set $monitor3 Virtual4
+set $monitor3 Virtual2
 
 workspace 1 output $monitor0
 workspace 4 output $monitor1
@@ -267,11 +267,15 @@ workspace 23 output $monitor3
 
 # for_window [instance="sun-awt-X11-XFramePeer" class="sun-launcher-LauncherHelper\$FXHelper|com-sun-javaws-Main"] floating enable
 for_window [instance="teensy" class="Teensy"] floating enable
-for_window [title="Plover: Suggestions"] sticky enable
-for_window [title="Plover: Strokes Meter"] sticky enable
-for_window [title="Plover: WPM Meter"] sticky enable
 for_window [class="Yad"] floating enable
 for_window [title="alsamixer"] floating enable
+for_window [title="Login - cadis"] floating enable
+for_window [title="Benutzersession abgelaufen - cadis"] floating enable
+for_window [class="kam-calipse-griffon-CadisCONTROL" title="cadis beenden"] floating enable
+for_window [title="CadisServer url chooser"] floating enable
+for_window [class="kam-calipse-griffon-CadisCONTROL" title="^win\d+$"] floating enable
+for_window [class="kam-calipse-griffon-CadisCONTROL" title="^Error$"] floating enable
+for_window [class="kam-calipse-griffon-CadisCONTROL" title="^Achtung"] floating enable
 #for_window [title="Welcome to IntelliJ IDEA"] floating enable
 for_window [title="^\[workspace 1\].*"] move container to workspace 1
 for_window [title="^\[workspace 2\].*"] move container to workspace 2
@@ -282,7 +286,12 @@ for_window [title="^\[workspace 6\].*"] move container to workspace 6
 for_window [title="^\[workspace 7\].*"] move container to workspace 7
 for_window [title="^\[workspace 8\].*"] move container to workspace 8
 for_window [title="^\[workspace 9\].*"] move container to workspace 9
-
+for_window [class="Microsoft Teams"] move container to workspace 2
+for_window [class="pritunl"] move container to workspace 2
+for_window [class="TeamworkTimer"] move container to workspace 2
+for_window [class="SimpleScreenRecorder"] floating enable
+for_window [class="Plover"] floating enable
+#, sticky enable
 
 # start the following apps on startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -299,5 +308,9 @@ exec --no-startup-id blueman-applet
 # exec --no-startup-id conky -c /usr/share/conky/conky_maia
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id volumeicon
+exec --no-startup-id teams --disable-seccomp-filter-sandbox
+exec --no-startup-id pritunl-client-electron
+exec --no-startup-id teamwork
+exec --no-startup-id chromium
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor

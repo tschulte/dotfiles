@@ -21,7 +21,6 @@ then
     dos2unix \
     espeak-ng \
     evince \
-    firefox \
     git \
     github-cli \
     glab \
