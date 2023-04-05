@@ -72,6 +72,7 @@ then
     for package in \
       eclipse-mat \
       gnome-commander \
+      jira-cli \
       mbrola-voices-us1 \
       mobsh-bin \
       nvm \
