@@ -1,0 +1,1 @@
+alias mr="mr -s"
