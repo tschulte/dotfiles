@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# show the jira issue id for the current branch
+# assumes the branch name contains the jira issue id
+
+git branch --show-current | sed -E "s/[^0-9]*([0-9]+).*/\1/"
+
