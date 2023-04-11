@@ -2,5 +2,5 @@
 # extract the jira issue id from the passed parameter
 # assumes the parameter contains the jira issue id
 
-echo $1 | grep [0-9] | sed -E "s/[^0-9]*([0-9]+).*/\1/"
+echo $1 | grep -oPi "([A-Z]+-[0-9]+)"
 
