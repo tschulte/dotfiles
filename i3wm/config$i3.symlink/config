@@ -291,6 +291,7 @@ for_window [class="pritunl"] move container to workspace 2
 for_window [class="TeamworkTimer"] move container to workspace 2
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [class="Plover"] floating enable
+for_window [title="^Outlook.*"] move container to workspace 2
 #, sticky enable
 
 # start the following apps on startup

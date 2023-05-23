@@ -39,7 +39,6 @@
         autoupdate = true
 [gui]
         encoding = utf-8
-	diffopts = --ignore-space-change
 [log]
         mailmap = true
         date = iso

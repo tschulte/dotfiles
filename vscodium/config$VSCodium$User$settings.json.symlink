@@ -21,7 +21,7 @@
     "index.tsx": "typescript-def",
     "types.ts": "typescript-def",
     "d.ts": "typescript-def",
-    "*.messages.ts": "i18n",
+    "**/i18n/*/*.json": "i18n",
     "routes.tsx": "routing",
     "*.adoc": "document"
   },
@@ -113,7 +113,7 @@
   "sonarlint.connectedMode.connections.sonarqube": [
     {
       "connectionId": "g3-sonar-1",
-      "serverUrl": "http://g3-sonar-1"
+      "serverUrl": "http://g3-sonar-1.cadis.local"
     }
   ],
   "[json]": {
@@ -125,6 +125,9 @@
       "level": "on"
     },
     "typescript:S3358": {
+      "level": "off"
+    },
+    "typescript:S3776": {
       "level": "off"
     }
   },
@@ -150,6 +153,7 @@
   },
   "redhat.telemetry.enabled": false,
   "cSpell.userWords": [
+    "clazz",
     "Dexie",
     "Masterdata",
     "redispatch",
@@ -166,5 +170,14 @@
   "window.titleBarStyle": "custom",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "jest.autoRun": {
+    "watch": false
+  },
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "gitlens.defaultDateShortFormat": "YYYY-MM-DD HH:mm:ss",
+  "vsicons.dontShowNewVersionMessage": true
 }
