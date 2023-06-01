@@ -14,7 +14,7 @@ then
   if test "$(uname -s)" = "Darwin"
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux" && test ! $(which apt)
+  elif test "$(expr substr $(uname -s) 1 5)" = "Linux" && test ! $(which apt) && test ! $(which pacman)
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
