@@ -1,17 +1,28 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, MavenPluginURLHandler, LaunchpadBugURLHandler
 [keybindings]
-  broadcast_all = None
-  broadcast_group = None
-  broadcast_off = None
-  edit_tab_title = None
-  edit_terminal_title = None
-  edit_window_title = None
+  hide_window = None
   group_all = None
   group_tab = None
-  hide_window = None
+  broadcast_off = None
+  broadcast_group = None
+  broadcast_all = None
   insert_number = None
   insert_padded = None
+  edit_window_title = None
+  edit_tab_title = None
+  edit_terminal_title = None
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    font = Monospace 16
+    foreground_color = "#ffffff"
+    use_system_font = False
+  [[presentation]]
+    background_color = "#ffffff"
+    font = Monospace 20
+    foreground_color = "#000000"
+    use_system_font = False
 [layouts]
   [[default]]
     [[[child1]]]
@@ -22,16 +33,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    background_darkness = 0.8
-    cursor_color = "#aaaaaa"
-    font = Monospace 16
-    foreground_color = "#ffffff"
-    use_system_font = False
-  [[presentation]]
-    background_color = "#ffffff"
-    cursor_color = "#aaaaaa"
-    font = Monospace 20
-    foreground_color = "#000000"
-    use_system_font = False
