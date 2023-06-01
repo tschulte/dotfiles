@@ -14,6 +14,7 @@ then
     base-devel \
     bash-completion \
     bleachbit \
+    clipit \
     chromium \
     diffpdf \
     docker \
@@ -26,6 +27,7 @@ then
     glab \
     graphviz \
     guitarix \
+    htop \
     i3-scrot \
     i3blocks \
     i3exit \
@@ -45,7 +47,6 @@ then
     qjackctl \
     realtime-privileges \
     rng-tools \
-    simplescreenrecorder \
     speedcrunch \
     sysstat \
     teensy-loader-cli \
@@ -56,6 +57,7 @@ then
     tigervnc \
     tk \
     translate-toolkit \
+    tree \
     ttf-fira-code \
     ttf-inconsolata \
     unzip \
@@ -80,6 +82,7 @@ then
       plover_plugins_manager \
       plover-git \
       proxyman-git \
+      simplescreenrecorder \
       tuxguitar \
       vscodium-bin \
       yed \
