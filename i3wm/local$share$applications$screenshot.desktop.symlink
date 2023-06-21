@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=i3-scrot -s
+Name=Screenshot
+Terminal=false
+Type=Application

@@ -291,12 +291,12 @@ for_window [class="pritunl"] move container to workspace 2
 for_window [class="TeamworkTimer"] move container to workspace 2
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [class="Plover"] floating enable
-for_window [title="^Outlook.*"] move container to workspace 2
+for_window [title="^Outlook.*"] move container to workspace 1
 #, sticky enable
 
 # start the following apps on startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id plover
+#exec --no-startup-id plover
 exec --no-startup-id setxkbmap de
 exec --no-startup-id xinput list --id-only | xargs -n1 -i xinput set-prop {} "libinput Middle Emulation Enabled" 1
 exec --no-startup-id nitrogen --restore
@@ -310,8 +310,8 @@ exec --no-startup-id blueman-applet
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id volumeicon
 exec --no-startup-id teams --disable-seccomp-filter-sandbox
-exec --no-startup-id pritunl-client-electron
-exec --no-startup-id teamwork
+# exec --no-startup-id pritunl-client-electron
+# exec --no-startup-id teamwork
 exec --no-startup-id chromium
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor

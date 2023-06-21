@@ -135,7 +135,6 @@
   "gitlab.instanceUrl": "http://la-gitlab",
   "java.semanticHighlighting.enabled": true,
   "python.languageServer": "Default",
-  "java.home": "/usr/lib/jvm/java-11-openjdk",
   "java.project.importHint": false,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -179,5 +178,9 @@
   },
   "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm:ss",
   "gitlens.defaultDateShortFormat": "YYYY-MM-DD HH:mm:ss",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "java.jdt.ls.java.home": "/home/schulte/.sdkman/candidates/java/20.0.1-tem",
+  "workbench.iconTheme": "vscode-icons",
+  "keyboard.dispatch": "keyCode",
+  "java.import.gradle.java.home": "/home/schulte/.sdkman/candidates/java/11.0.19-tem"
 }

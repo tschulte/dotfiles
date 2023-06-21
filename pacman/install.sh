@@ -33,6 +33,7 @@ then
     i3exit \
     i3-wm \
     intellij-idea-community-edition \
+    jq \
     kdiff3 \
     lsof \
     mariadb \

@@ -10,7 +10,7 @@
 ## VcXsrv
 
 - Install VcXsrv (https://sourceforge.net/projects/vcxsrv/)
-- Launch VcXsrv with vcxsrv.exe -auth "%USERPROFILE%\.Xauthority" -clipboard -wgl -keyhook -emulate3buttons -nowinkill
+- Launch VcXsrv with vcxsrv.exe -auth "%USERPROFILE%\.Xauthority" -clipboard -noprimary -wgl -keyhook -emulate3buttons -nowinkill
 
 ## Launch i3
 
