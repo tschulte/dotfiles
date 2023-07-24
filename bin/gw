@@ -7,7 +7,7 @@ then
   if [[ ! -e /tmp/.X11-unix/X1 ]]
   then
     echo "starting xvnc"
-    /usr/bin/vncserver :1 -localhost -nolisten tcp
+    exec /usr/bin/Xvnc :1 -localhost -nolisten tcp &
   fi
   if [[ -e /tmp/.X11-unix/X1 ]]
   then
