@@ -23,12 +23,12 @@
   },
   {
     "key": "ctrl+alt+down",
-    "command": "geeebe.duplicateText",
+    "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+d",
-    "command": "-geeebe.duplicateText",
+    "key": "ctrl+alt+up",
+    "command": "editor.action.copyLinesUpAction",
     "when": "editorTextFocus"
   },
   {

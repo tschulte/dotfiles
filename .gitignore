@@ -15,4 +15,4 @@ git/gitconfig.local.symlink
 plover/config$plover.symlink/.cache
 plover/config$plover.symlink/plugins
 plover/config$plover.symlink/*.log*
-
+plover/config$plover.symlink/clippy_2.org

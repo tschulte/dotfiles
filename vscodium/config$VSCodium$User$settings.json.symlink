@@ -116,9 +116,6 @@
       "serverUrl": "http://g3-sonar-1.cadis.local"
     }
   ],
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.fontFamily": "'monospace', monospace, 'Droid Sans Mono', 'Droid Sans Fallback'",
   "sonarlint.rules": {
     "typescript:S1440": {
@@ -136,20 +133,11 @@
   "java.semanticHighlighting.enabled": true,
   "python.languageServer": "Default",
   "java.project.importHint": false,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjoyNDAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
   "editor.formatOnSave": true,
   "svg.preview.mode": "svg",
   "editor.copyWithSyntaxHighlighting": false,
   "jest.autoEnable": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "redhat.telemetry.enabled": false,
   "cSpell.userWords": [
     "clazz",
@@ -167,20 +155,32 @@
     "validatable"
   ],
   "window.titleBarStyle": "custom",
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "jest.autoRun": {
-    "watch": false
-  },
   "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm:ss",
   "gitlens.defaultDateShortFormat": "YYYY-MM-DD HH:mm:ss",
   "vsicons.dontShowNewVersionMessage": true,
   "java.jdt.ls.java.home": "/home/schulte/.sdkman/candidates/java/20.0.1-tem",
   "workbench.iconTheme": "vscode-icons",
   "keyboard.dispatch": "keyCode",
-  "java.import.gradle.java.home": "/home/schulte/.sdkman/candidates/java/11.0.19-tem"
+  "java.import.gradle.java.home": "/home/schulte/.sdkman/candidates/java/11.0.19-tem",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

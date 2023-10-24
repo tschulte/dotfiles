@@ -5,6 +5,9 @@ fpath=($ZSH/functions $fpath)
 
 autoload -U $ZSH/functions/*(:t)
 
+autoload -U select-word-style
+select-word-style bash
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
