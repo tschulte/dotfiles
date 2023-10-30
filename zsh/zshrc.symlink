@@ -1,4 +1,6 @@
-zmodload zsh/zprof
+# for profiling the performance, uncomment this line and the last line of this file
+# zmodload zsh/zprof
+
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
@@ -17,6 +19,10 @@ fi
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
 
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
+
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
 do
@@ -28,10 +34,6 @@ for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
   source $file
 done
-
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -46,3 +48,4 @@ fi
 
 unset config_files
 
+# zprof
