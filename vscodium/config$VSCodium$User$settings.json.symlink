@@ -183,4 +183,5 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "asciidoc.extensions.enableKroki": true
 }
