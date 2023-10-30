@@ -9,23 +9,6 @@ export ZSH=$HOME/.dotfiles
 # Set defaults
 $ZSH/bin/set-defaults
 
-# Try to Install homebrew
-$ZSH/homebrew/install.sh 2>&1
-
-# Try to install dependencies using apt
-$ZSH/apt/install.sh
-
-# Try to install dependencies using pacman
-$ZSH/pacman/install.sh
-
-# if homebrew was installed
-if test $(which brew)
-then
-  # Upgrade homebrew
-  echo "› brew update"
-  brew update
-fi
-
 # Install software
 echo "› $ZSH/script/install"
 $ZSH/script/install

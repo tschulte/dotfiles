@@ -1,5 +1,6 @@
 [DEFAULT]
-git = git $@
-glab = glab $@
-gw = gw $@
+git = git "$@"
+glab = glab "$@"
+gh = gh "$@"
+gw = gw "$@"
 jobs = 5

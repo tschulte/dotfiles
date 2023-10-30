@@ -24,6 +24,7 @@ then
     evince \
     git \
     github-cli \
+    gimp \
     glab \
     graphviz \
     guitarix \
@@ -82,7 +83,6 @@ then
       pdfx \
       plover_plugins_manager \
       plover-git \
-      proxyman-git \
       simplescreenrecorder \
       tuxguitar \
       vscodium-bin \
