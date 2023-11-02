@@ -298,6 +298,7 @@ for_window [title="^Outlook.*"] move container to workspace 1
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id plover
 exec --no-startup-id setxkbmap de
+exec --no-startup-id xrandr --output `xrandr --listactivemonitors | grep 0: | sed -E "s/ .* (.+)/\1/"` --primary
 exec --no-startup-id xinput list --id-only | xargs -n1 -i xinput set-prop {} "libinput Middle Emulation Enabled" 1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
