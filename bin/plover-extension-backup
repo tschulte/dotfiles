@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Usage: plover-extension-backup
+#
+# Saves a list of your currently installed plover extensions to
+# ~/.dotfiles/plover/extensions.txt suitable for install
+# via plover-extension-install
+
+set -e
+
+# plover_plugins list_plugins --freeze > ~/.dotfiles/plover/extensions.txt
+plover -s pip freeze | grep ^plover- > ~/.dotfiles/plover/extensions.txt

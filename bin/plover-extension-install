@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Usage: plover-extension-install
+#
+# Installs the plover extensions listed in your extensions.txt file
+# located at ~/.dotfiles/plover/extensions.txt
+#
+# You can generate a new list based on currently installed
+# extensions via plover-extension-backup
+
+set -e
+
+cat ~/.dotfiles/plover/extensions.txt | xargs plover -s pip install
