@@ -303,7 +303,6 @@ exec --no-startup-id xinput list --id-only | xargs -n1 -i xinput set-prop {} "li
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb

@@ -2,12 +2,12 @@
 #
 # Usage: code-extension-install
 #
-# Installs the vscodium extensions listed in your extensions.txt file
-# located at ~/.dotfiles/vscodium/extensions.txt
+# Installs the Code extensions listed in your extensions.txt file
+# located at ~/.dotfiles/Code/extensions.txt
 #
 # You can generate a new list based on currently installed
 # extensions via code-extension-backup
 
 set -e
 
-cat ~/.dotfiles/vscodium/extensions.txt | xargs -n1 vscodium --install-extension
+cat ~/.dotfiles/Code/extensions.txt | xargs -n1 code --install-extension

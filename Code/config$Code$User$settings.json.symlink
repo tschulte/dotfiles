@@ -161,7 +161,7 @@
   "java.jdt.ls.java.home": "/home/schulte/.sdkman/candidates/java/20.0.1-tem",
   "workbench.iconTheme": "vscode-icons",
   "keyboard.dispatch": "keyCode",
-  "java.import.gradle.java.home": "/home/schulte/.sdkman/candidates/java/11.0.19-tem",
+  "java.import.gradle.java.home": "/home/schulte/.sdkman/candidates/java/current",
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
@@ -183,5 +183,9 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "asciidoc.extensions.enableKroki": true
+  "asciidoc.extensions.enableKroki": true,
+  "jest.autoRun": {
+    "watch": false
+  },
+  "git.openRepositoryInParentFolders": "always"
 }

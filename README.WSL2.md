@@ -3,7 +3,6 @@
 ## Manjaro
 
 - Install from https://github.com/sileshn/ManjaroWSL2
-- Add pamac: `pacman -Syu pamac-cli`
 - create .Xauthority (https://stackoverflow.com/questions/66768148/how-to-setup-vcxsrv-for-use-with-wsl2/66768217#66768217)
 - install these dotfiles
 

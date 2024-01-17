@@ -1,0 +1,11 @@
+plover-auto-reconnect-machine==0.1.0
+plover-clippy-2==0.0.5
+plover-emoji==0.0.4
+plover-layout-display==0.1.2
+plover-next-stroke==0.2.2
+plover-ninja==0.0.13
+plover-plugins-manager==0.7.1
+plover-regenpfeifer==1.1.0
+plover-treal==1.0.1
+plover-word-tray==0.0.10
+plover-wpm-meter==0.2.3

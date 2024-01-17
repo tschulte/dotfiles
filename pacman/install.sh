@@ -67,37 +67,27 @@ then
     xclip \
     xdotool \
     yad \
+    yay \
     zip \
     zsh \
     zsh-autosuggestions \
     zsh-completions \
 
-    aur_packages=()
-    for package in \
-      eclipse-mat \
-      gnome-commander \
-      jira-cli \
-      mbrola-voices-us1 \
-      mobsh-bin \
-      nvm \
-      pdfx \
-      plover_plugins_manager \
-      plover-git \
-      simplescreenrecorder \
-      tuxguitar \
-      vscodium-bin \
-      yed \
+  yay -Syu --needed --noconfirm \
+    eclipse-mat \
+    gnome-commander \
+    jira-cli-bin \
+    mbrola-voices-us1 \
+    mobsh-bin \
+    nvm \
+    pdfx \
+    plover_plugins_manager \
+    plover-git \
+    simplescreenrecorder \
+    tuxguitar \
+    visual-studio-code-bin \
+    yed \
 
-    do
-      if ! $(pacman -Qi $package > /dev/null 2>&1)
-      then
-        aur_packages+=($package)
-      fi
-    done
-    if test ${#aur_packages[@]} -gt 0
-    then
-      pamac build --no-confirm ${aur_packages[@]}
-    fi
 
     # TODO:
     # if !systemctl status rngd.service
