@@ -76,7 +76,7 @@ then
   yay -Syu --needed --noconfirm \
     eclipse-mat \
     gnome-commander \
-    jira-cli-bin \
+    jira-cli \
     mbrola-voices-us1 \
     mobsh-bin \
     nvm \
