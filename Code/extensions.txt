@@ -31,7 +31,6 @@ ms-toolsai.vscode-jupyter-slideshow
 ms-vscode-remote.remote-containers
 ms-vscode.test-adapter-converter
 ms-vscode.vscode-typescript-tslint-plugin
-msjsdiag.debugger-for-chrome
 Orta.vscode-jest
 PKief.material-icon-theme
 redhat.java
