@@ -15,4 +15,10 @@ then
   fi
 fi
 
-nice -n 15 $(upfind -name gradlew) $*
+gradlew=$(upfind -name gradlew)
+if [[ -z "${gradlew}" ]]
+then
+  echo "not inside a gradle project directory"
+  exit 1
+fi
+nice -n 15 ${gradlew} $*
