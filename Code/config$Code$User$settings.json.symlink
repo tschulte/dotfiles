@@ -34,7 +34,6 @@
     "jsonServer": "server"
   },
   "search.useGlobalIgnoreFiles": true,
-  "files.trimTrailingWhitespace": true,
   "java.format.enabled": false,
   "editor.mouseWheelZoom": true,
   "terminal.integrated.rendererType": "dom",
@@ -190,5 +189,7 @@
   "git.openRepositoryInParentFolders": "always",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
 }
