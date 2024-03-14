@@ -75,7 +75,6 @@ then
 
   yay -Syu --needed --noconfirm \
     eclipse-mat \
-    gnome-commander \
     jira-cli \
     mbrola-voices-us1 \
     mobsh-bin \
@@ -84,7 +83,7 @@ then
     plover_plugins_manager \
     plover-git \
     simplescreenrecorder \
-    tuxguitar \
+    tuxguitar-bin \
     visual-studio-code-bin \
     yed \
 

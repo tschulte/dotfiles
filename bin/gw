@@ -4,12 +4,12 @@
 # but don't start Xvncserver when launching the gui
 if [[ -e /usr/bin/vncserver && ! "$*" =~ "run" ]]
 then
-  if [[ ! -e /tmp/.X11-unix/X1 ]]
+  if [[ ! -e /tmp/.X1-lock ]]
   then
     echo "starting xvnc"
     exec /usr/bin/Xvnc :1 -localhost -nolisten tcp &
   fi
-  if [[ -e /tmp/.X11-unix/X1 ]]
+  if [[ -e /tmp/.X1-lock ]]
   then
     export DISPLAY=:1
   fi

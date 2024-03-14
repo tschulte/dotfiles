@@ -2,7 +2,7 @@
 
 install zsh zsh-autosuggestions
 
-sudo chsh -s /usr/bin/zsh $USERNAME
+sudo chsh -s /usr/bin/zsh `whoami`
 
 ```.zshrc
 HISTFILE=~/.histfile

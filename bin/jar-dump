@@ -1,3 +1,3 @@
 #!/bin/sh
 
-jar tvf "$1" | sed -r -e 's/ +/ /g' -e 's/^([0-9])/ \1/g' | cut -d ' ' -f 2,9 | sed -r -e 's/ *(.*) (.*)/\2 \1 bytes/' | sort
+jar tvf "$1" 2>/dev/null | sed -r -e 's/ +/ /g' -e 's/^([0-9])/ \1/g' | cut -d ' ' -f 2,9 | sed -r -e 's/ *(.*) (.*)/\2 \1 bytes/' | sort
