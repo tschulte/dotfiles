@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+$/ = "> Task "; # Set input record separator
+my @blocks;
+
+while (<>) {
+    if (/Build cache key for task '.*' is/ or /ENABLE_CONDITION_NOT_SATISFIED/) {
+        $_ = "> Task " . $_ unless m/^> Task /; # Prepend "> Task " if it's not there
+        $_ =~ s/> Task $//; # Remove trailing "> Task " if it exists
+        my @lines = grep { /^> Task/ or /^Appending / or /^Build cache key for task/ or /ENABLE_CONDITION_NOT_SATISFIED/ } split("\n");
+        push @blocks, join("\n", @lines);
+    }
+}
+
+@blocks = sort @blocks;
+print join("\n\n", @blocks);
