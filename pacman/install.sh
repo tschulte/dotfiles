@@ -14,41 +14,51 @@ then
     base-devel \
     bash-completion \
     bleachbit \
-    clipit \
     chromium \
+    clipit \
     diffpdf \
     docker \
     docker-compose \
     dos2unix \
+    eclipse-mat \
     espeak-ng \
     evince \
+    gimp \
     git \
     github-cli \
-    gimp \
     glab \
     graphviz \
     guitarix \
     htop \
     i3-scrot \
+    i3-wm \
     i3blocks \
     i3exit \
-    i3-wm \
     intellij-idea-community-edition \
+    jira-cli \
     jq \
     kdiff3 \
     lsof \
+    magnus \
     mariadb \
     mariadb-clients \
+    mbrola-voices-us1 \
     meld \
+    mobsh-bin \
     morc_menu \
     moreutils \
     myrepos \
     neovim \
     noto-fonts-emoji \
+    nvm \
+    pdfx \
     playerctl \
+    plover_plugins_manager \
+    plover-git \
     qjackctl \
     realtime-privileges \
     rng-tools \
+    simplescreenrecorder \
     speedcrunch \
     sysstat \
     teensy-loader-cli \
@@ -62,30 +72,19 @@ then
     tree \
     ttf-fira-code \
     ttf-inconsolata \
+    tuxguitar-bin \
     unzip \
+    visual-studio-code-bin \
     wireshark-qt \
     xclip \
     xdotool \
     yad \
     yay \
+    yed \
     zip \
     zsh \
     zsh-autosuggestions \
     zsh-completions \
-
-  yay -Syu --needed --noconfirm \
-    eclipse-mat \
-    jira-cli \
-    mbrola-voices-us1 \
-    mobsh-bin \
-    nvm \
-    pdfx \
-    plover_plugins_manager \
-    plover-git \
-    simplescreenrecorder \
-    tuxguitar-bin \
-    visual-studio-code-bin \
-    yed \
 
 
     # TODO:

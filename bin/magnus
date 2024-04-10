@@ -1,0 +1,10 @@
+#!/bin/bash
+# workaround for https://github.com/stuartlangridge/magnus/issues/10
+
+/usr/bin/magnus
+
+if [[ -e ~/.cache/magnus.json ]]
+then
+    # remove window size and position from config file
+    cat ~/.cache/magnus.json | jq 'del(.metrics)' | tee ~/.cache/magnus.json > /dev/null
+fi

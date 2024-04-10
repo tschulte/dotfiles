@@ -289,7 +289,8 @@ for_window [title="^\[workspace 9\].*"] move container to workspace 9
 for_window [class="Microsoft Teams"] move container to workspace 2
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [class="Plover"] floating enable
-for_window [title="^Outlook \(PWA\).*"] move container to workspace 1
+for_window [title="^Outlook \(PWA\)"] move container to workspace 1
+for_window [class="Magnus"] floating enable sticky enable
 #, sticky enable
 
 # start the following apps on startup
