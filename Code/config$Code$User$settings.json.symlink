@@ -3,7 +3,7 @@
   "AsciiDoc.asciidoctor_command": "asciidoctor -r asciidoctor-diagram -o -",
   "files.autoSave": "onWindowChange",
   "java.errors.incompleteClasspath.severity": "ignore",
-  "window.title": "${rootName}${separator}${dirty}${activeEditorMedium}${separator}${appName}",
+  "window.title": "${rootName}${separator}${activeRepositoryBranchName}${separator}${dirty}${activeEditorMedium}${separator}${appName}",
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "deepIndent",
   "editor.quickSuggestions": {
