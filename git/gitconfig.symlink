@@ -26,12 +26,15 @@
 [apply]
         whitespace = nowarn
 [merge]
-#        renormalize = true
+        renormalize = true
         conflictstyle = diff3
         tool = kdiff3
 [mergetool]
         keepBackup = false
         keepTemporaries = false
+[mergetool "meld"]
+	# see https://lukas.zapletalovi.com/posts/2012/three-way-git-merging-with-meld/
+	cmd = meld $LOCAL $BASE $REMOTE -o $MERGED --diff $BASE $LOCAL --diff $BASE $REMOTE --auto-merge
 [difftool]
         prompt = false
 [rerere]
