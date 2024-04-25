@@ -3,7 +3,8 @@
 if test $(which pacman)
 then
   echo "› installing required software"
-  sudo pacman -Syu --needed --noconfirm \
+  sudo pacman -Syu --needed --noconfirm yay
+  sudo yay -Syu --needed --noconfirm \
     acpi \
     ardour \
     asciinema \
@@ -79,7 +80,6 @@ then
     xclip \
     xdotool \
     yad \
-    yay \
     yed \
     zip \
     zsh \
