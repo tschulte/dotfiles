@@ -1,0 +1,10 @@
+rootProject {
+    plugins.withId("com.gradle.build-scan") {
+        gradleEnterprise {
+            buildScan {
+                termsOfServiceUrl = "https://gradle.com/terms-of-service"
+                termsOfServiceAgree = "yes"
+            }
+        }
+    }
+}

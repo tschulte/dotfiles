@@ -1,0 +1,12 @@
+if (gradle.startParameter.taskNames.contains("help")) {
+    // debug task creation at configuration time
+    allprojects { p ->
+        p.afterEvaluate {
+            tasks.configureEach { t ->
+                if (t.name != "help") {
+                    logger.quiet("Task created: ${t.name} (${p.path != ':' ? p.path : ''}:${t.name} -- ${t.class.name})")
+                }
+            }
+        }
+    }
+}

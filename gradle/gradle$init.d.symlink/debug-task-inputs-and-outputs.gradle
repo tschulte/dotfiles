@@ -1,0 +1,26 @@
+/*
+ * Register a task "debugTaskInputs" on each project that prints the inputs of all tasks.
+ * You can optionally pass a task name to filter the output.
+ * Usage: ./gradlew :subproject:debugTaskInputs [-Ptask=taskName]
+ */
+if (gradle.startParameter.taskNames.find { it == "debugTaskInputs" || it.endsWith(":debugTaskInputs") }) {
+  allprojects { p ->
+      p.tasks.register("debugTaskInputs") {
+          doLast {
+              def filteredTask = p.hasProperty("task") ? p.task : null
+              def filter = { taskName ->
+                  filteredTask == null || taskName == filteredTask
+              }
+              p.tasks.getNames().findAll(filter).each { taskName ->
+                  def task = p.tasks.getByName(taskName)
+                  p.logger.quiet("Task: $taskName")
+                  logger.quiet("properties:")
+                  task.inputs.properties.each { key, value ->
+                      logger.quiet("$key = $value")
+                  }
+                  logger.quiet("")
+              }
+          }
+      }
+  }
+}

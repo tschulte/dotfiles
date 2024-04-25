@@ -1,0 +1,11 @@
+if (System.getenv("NO_LOCAL_CACHE") == "true") {
+    println "disabling local cache"
+    gradle.settingsEvaluated { settings ->
+        settings.buildCache {
+            local {
+                enabled = false
+            }
+        }
+    }
+}
+
