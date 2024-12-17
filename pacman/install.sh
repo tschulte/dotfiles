@@ -18,6 +18,7 @@ then
     chromium \
     clipit \
     diffpdf \
+    difftastic \
     docker \
     docker-compose \
     dos2unix \
@@ -45,6 +46,7 @@ then
     mariadb-clients \
     mbrola-voices-us1 \
     meld \
+    mergiraf \
     mobsh-bin \
     morc_menu \
     moreutils \
@@ -57,6 +59,7 @@ then
     plover_plugins_manager \
     plover-git \
     qjackctl \
+    qmk \
     realtime-privileges \
     rng-tools \
     simplescreenrecorder \

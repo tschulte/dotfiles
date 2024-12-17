@@ -29,14 +29,34 @@
         renormalize = true
         conflictstyle = diff3
         tool = kdiff3
+[merge "mergiraf"]
+  name = mergiraf
+  driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P
 [mergetool]
         keepBackup = false
         keepTemporaries = false
 [mergetool "meld"]
 	# see https://lukas.zapletalovi.com/posts/2012/three-way-git-merging-with-meld/
 	cmd = meld $LOCAL $BASE $REMOTE -o $MERGED --diff $BASE $LOCAL --diff $BASE $REMOTE --auto-merge
+[mergetool "idea"]
+	cmd = idea merge $LOCAL $REMOTE $BASE $MERGED
+
 [difftool]
-        prompt = false
+	prompt = false
+[pager]
+  # Use a pager if the difftool output is larger than one screenful,
+  # consistent with the behaviour of `git diff`.
+  difftool = true
+[diff]
+  # Set difftastic as the default difftool, so we don't need to specify
+  # `-t difftastic` every time.
+  tool = difftastic
+[difftool "meld"]
+	cmd = meld $LOCAL $REMOTE
+[difftool "idea"]
+	cmd = idea diff $LOCAL $REMOTE
+[difftool "difftastic"]
+  cmd = difft "$MERGED" "$LOCAL" "abcdef1" "100644" "$REMOTE" "abcdef2" "100644"
 [rerere]
         enabled = true
         autoupdate = true
@@ -67,6 +87,8 @@
         default = simple
 [url "git@github.com:"]
 	insteadOf = gh://
+[url "https://codeberg.org/"]
+	insteadOf = cb://
 [init]
 	defaultBranch = main
 
