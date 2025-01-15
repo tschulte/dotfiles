@@ -2,5 +2,5 @@
 # show the jira issue details for the current branch
 # assumes the branch name contains the jira issue id
 
-git jira-id | xargs jira issue view $*
+git jira-id | xargs jira issue view "$@"
 

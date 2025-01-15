@@ -2,5 +2,5 @@
 # show the jira issue in the browser for the current branch
 # assumes the branch name contains the jira issue id
 
-git jira-id | xargs jira open $*
+git jira-id | xargs jira open "$@"
 

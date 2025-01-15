@@ -21,4 +21,4 @@ then
   echo "not inside a gradle project directory"
   exit 1
 fi
-nice -n 15 ${gradlew} $*
+nice -n 15 ${gradlew} "$@"
