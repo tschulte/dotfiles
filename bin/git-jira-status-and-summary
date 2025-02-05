@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# show the jira issue status and summary for the current branch
+# assumes the branch name contains the jira issue id
+
+git jira-id | xargs jira-status-and-summary
+

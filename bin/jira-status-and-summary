@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# show the jira issue status and summary for the issue passed as first parameter
+
+jira issue list -q "key in ($1)" --columns status,summary --plain --no-headers 2>/dev/null
+

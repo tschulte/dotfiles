@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# list the jira issue status and summary for all local branches
+
+git branch | xargs jira-id | xargs jira-status-and-summary
+
