@@ -29,9 +29,9 @@
         renormalize = true
         conflictstyle = diff3
         tool = kdiff3
-[merge "mergiraf"]
-  name = mergiraf
-  driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P
+#[merge "mergiraf"]
+#  name = mergiraf
+#  driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P
 [mergetool]
         keepBackup = false
         keepTemporaries = false
@@ -67,13 +67,14 @@
         date = iso
 [diff "jar"]
 	textconv = jar-dump
-[diff "image"]
-	command = git-imgdiff
+[difftool "image"]
+	cmd = git-imgdiff "$REMOTE" "$LOCAL"
 [diff "pdf"]
-	command = git-diffpdf
 	textconv = git-pdftotext
-[diff "excel"]
-	command = git-excel_cmp
+[difftool "pdf"]
+	cmd = git-diffpdf "$REMOTE" "$LOCAL"
+[difftool "excel"]
+	cmd = git-excel_cmp "$REMOTE" "$LOCAL"
 [rebase]
 	autosquash = true
 	autostash = true

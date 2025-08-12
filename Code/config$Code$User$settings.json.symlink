@@ -3,7 +3,7 @@
   "AsciiDoc.asciidoctor_command": "asciidoctor -r asciidoctor-diagram -o -",
   "files.autoSave": "onWindowChange",
   "java.errors.incompleteClasspath.severity": "ignore",
-  "window.title": "${rootName}${separator}${activeRepositoryBranchName}${separator}${dirty}${activeEditorMedium}${separator}${appName}",
+  "window.title": "${appName}${separator}${rootPath}${separator}${activeRepositoryBranchName}${separator}${dirty}${activeEditorMedium}",
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "deepIndent",
   "editor.quickSuggestions": {
@@ -157,8 +157,7 @@
   "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm:ss",
   "gitlens.defaultDateShortFormat": "YYYY-MM-DD HH:mm:ss",
   "vsicons.dontShowNewVersionMessage": true,
-  "java.jdt.ls.java.home": "/home/schulte/.sdkman/candidates/java/20.0.1-tem",
-  "workbench.iconTheme": "vscode-icons",
+  "java.jdt.ls.java.home": "/home/schulte/.sdkman/candidates/java/current",
   "keyboard.dispatch": "keyCode",
   "java.import.gradle.java.home": "/home/schulte/.sdkman/candidates/java/current",
   "[xml]": {
@@ -191,5 +190,27 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never"
+  },
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "default"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "[csv]": {},
+  "github.copilot.nextEditSuggestions.enabled": true
 }

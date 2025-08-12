@@ -45,5 +45,18 @@
     "key": "ctrl+shift+i",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "composerMode.background"
   }
 ]
