@@ -19,9 +19,11 @@ then
     clipit \
     diffpdf \
     difftastic \
+    discord \
     docker \
     docker-compose \
     dos2unix \
+    dropbox \
     eclipse-mat \
     espeak-ng \
     evince \
@@ -56,8 +58,7 @@ then
     nvm \
     pdfx \
     playerctl \
-    plover_plugins_manager \
-    plover-git \
+    plover \
     qjackctl \
     qmk \
     realtime-privileges \
@@ -70,13 +71,14 @@ then
     texlive-core \
     texlive-fontsextra \
     texlive-latexextra \
+    thunderbird \
     tigervnc \
     tk \
     translate-toolkit \
     tree \
     ttf-fira-code \
     ttf-inconsolata \
-    tuxguitar-bin \
+    tuxguitar \
     unzip \
     visual-studio-code-bin \
     wireshark-qt \
