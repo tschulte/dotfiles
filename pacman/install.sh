@@ -15,6 +15,7 @@ then
     base-devel \
     bash-completion \
     bleachbit \
+    bottles \
     chromium \
     clipit \
     diffpdf \
@@ -31,6 +32,7 @@ then
     git \
     github-cli \
     glab \
+    gnome-commander \
     graphviz \
     guitarix \
     htop \
@@ -82,6 +84,7 @@ then
     unzip \
     visual-studio-code-bin \
     wireshark-qt \
+    xautolock \
     xclip \
     xdotool \
     yad \

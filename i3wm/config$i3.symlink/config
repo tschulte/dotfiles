@@ -230,7 +230,7 @@ bindsym $mod+c mode "resize"
 # finds out, if available)
 bar {
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
-  tray_output primary
+  #tray_output primary
 }
 
 focus_follows_mouse no
@@ -296,7 +296,7 @@ for_window [class="Magnus"] floating enable sticky enable
 # start the following apps on startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id plover
-exec --no-startup-id xrandr --output `xrandr --listactivemonitors | grep 0: | sed -E "s/ .* (.+)/\1/"` --primary
+#exec --no-startup-id xrandr --output `xrandr --listactivemonitors | grep 0: | sed -E "s/ .* (.+)/\1/"` --primary
 exec --no-startup-id xinput list --id-only | xargs -n1 -i xinput set-prop {} "libinput Middle Emulation Enabled" 1
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
@@ -305,7 +305,7 @@ exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id conky -c /usr/share/conky/conky_maia
-# exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id "xautolock -detectsleep -time 10 -locker \"i3lock -c 000000\""
 exec --no-startup-id volumeicon
 exec --no-startup-id teams --disable-seccomp-filter-sandbox
 # exec --no-startup-id pritunl-client-electron
