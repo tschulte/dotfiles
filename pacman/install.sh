@@ -17,7 +17,6 @@ then
     bleachbit \
     bottles \
     chromium \
-    clipit \
     diffpdf \
     difftastic \
     discord \
@@ -25,7 +24,6 @@ then
     docker-compose \
     dos2unix \
     dropbox \
-    eclipse-mat \
     espeak-ng \
     evince \
     gimp \
@@ -34,25 +32,17 @@ then
     glab \
     gnome-commander \
     graphviz \
-    guitarix \
     htop \
-    i3-scrot \
-    i3-wm \
-    i3blocks \
-    i3exit \
     intellij-idea-community-edition \
     jira-cli \
     jq \
     kdiff3 \
     lsof \
-    magnus \
     mariadb \
     mariadb-clients \
     mbrola-voices-us1 \
     meld \
     mergiraf \
-    mobsh-bin \
-    morc_menu \
     moreutils \
     myrepos \
     neovim \
@@ -61,14 +51,11 @@ then
     pdfx \
     playerctl \
     plover \
-    qjackctl \
     qmk \
-    realtime-privileges \
     rng-tools \
-    simplescreenrecorder \
     speedcrunch \
     sysstat \
-    teensy-loader-cli \
+    teensy_loader_cli \
     terminator \
     texlive-core \
     texlive-fontsextra \
@@ -84,9 +71,6 @@ then
     unzip \
     visual-studio-code-bin \
     wireshark-qt \
-    xautolock \
-    xclip \
-    xdotool \
     yad \
     yed \
     zip \
@@ -99,5 +83,7 @@ then
     # if !systemctl status rngd.service
     # systemctl enable rngd
     # systemctl start rngd
+
+    sudo usermod -a -G wireshark,docker,uucp $(whoami)
 
 fi

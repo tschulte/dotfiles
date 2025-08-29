@@ -1,0 +1,39 @@
+### Input configuration
+#
+# Read `man 5 sway-input` for more information about this section.
+
+# Touchpad configuration
+input type:touchpad {
+    tap enabled         # enables click-on-tap
+    tap_button_map lrm  # tap with 1 finger = left click, 2 fingers = right click, 3 fingers = middle click
+    dwt enabled         # disable (touchpad) while typing
+    dwtp enabled        # disable (touchpad) while track pointing
+    natural_scroll enabled
+}
+
+# Enable numlock by default
+input type:keyboard xkb_numlock enabled
+
+# Set keyboard layout and variant based on current system settings
+exec_always {
+    'swaymsg input type:keyboard xkb_layout "$(localectl status | grep "X11 Layout" | sed -e "s/^.*X11 Layout://")"'
+    'swaymsg input type:keyboard xkb_variant "$(localectl status | grep "X11 Variant" | sed -e "s/^.*X11 Variant://")"'
+}
+
+# # Toggle between keyboard layouts. This example has the "us" and "gb"
+# # keyboard layouts, and uses Alt+Shift to toggle between them.
+# input "type:keyboard" {
+#     xkb_layout "us,gb"
+#     xkb_options "grp:alt_shift_toggle"
+# }
+# # Assign the same binding to "pkill -RTMIN+1 waybar" to send signal to
+# # the Waybar keyboard module (so the module shows the updated layout).
+# # This example uses Alt + left Shift.
+# bindsym Alt+Shift_L exec "pkill -RTMIN+1 waybar"
+
+
+# stop power button from shutting down
+exec systemd-inhibit --who=sway --what=handle-power-key --why="show power menu" sleep infinity
+
+# show the power menu instead
+bindsym XF86PowerOff exec ~/.config/sway/scripts/power_menu.sh
