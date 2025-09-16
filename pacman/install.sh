@@ -17,6 +17,7 @@ then
     bleachbit \
     bottles \
     chromium \
+    dex \
     diffpdf \
     difftastic \
     discord \
@@ -52,6 +53,7 @@ then
     playerctl \
     plover \
     qmk \
+    repgrep \
     rng-tools \
     speedcrunch \
     sysstat \
