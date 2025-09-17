@@ -51,7 +51,6 @@ then
     nvm \
     pdfx \
     playerctl \
-    plover \
     qmk \
     repgrep \
     rng-tools \
