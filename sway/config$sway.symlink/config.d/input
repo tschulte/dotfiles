@@ -14,7 +14,8 @@ input type:touchpad {
 focus_follows_mouse no
 
 # Enable numlock by default
-input type:keyboard xkb_numlock enabled
+# does not work with neo2 keyboard layout
+# input type:keyboard xkb_numlock enabled
 
 # Set keyboard layout and variant based on current system settings
 exec_always {
