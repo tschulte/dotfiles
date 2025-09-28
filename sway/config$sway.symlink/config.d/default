@@ -117,6 +117,19 @@ set $powermenu ~/.config/sway/scripts/power_menu.sh
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 
+    bindsym {
+      # move current workspace
+      $mod+Ctrl+Shift+Left move workspace to output left
+      $mod+Ctrl+Shift+Right move workspace to output right
+      $mod+Ctrl+Shift+Down move workspace to output down
+      $mod+Ctrl+Shift+Up move workspace to output up
+      # Vim key support
+      $mod+Ctrl+Shift+$left move workspace to output left
+      $mod+Ctrl+Shift+$right move workspace to output right
+      $mod+Ctrl+Shift+$down move workspace to output down
+      $mod+Ctrl+Shift+$up move workspace to output up
+    }
+
 #
 # Layout stuff:
 #
