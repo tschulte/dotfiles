@@ -56,7 +56,18 @@
     "command": "workbench.action.navigateToLastEditLocation"
   },
   {
-    "key": "ctrl+e",
-    "command": "composerMode.background"
+    "key": "ctrl+shift+;",
+    "command": "composer.openModelToggle",
+    "when": "composerFocused && !editorTextFocus"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "-composer.openModelToggle",
+    "when": "composerFocused && !editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+    "when": "cursor.agentIdeUnification.enabled == true && !isAuxiliaryWindowFocusedContext"
   }
 ]

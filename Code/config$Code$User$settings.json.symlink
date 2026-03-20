@@ -9,11 +9,11 @@
   "editor.quickSuggestions": {
     "other": false,
     "comments": false,
-    "strings": false
+    "strings": false,
   },
   "editor.suggestOnTriggerCharacters": false,
   "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
+    "suppressShowKeyBindingsNotice": true,
   },
   "tslint.autoFixOnSave": true,
   "material-icon-theme.files.associations": {
@@ -23,7 +23,7 @@
     "d.ts": "typescript-def",
     "**/i18n/*/*.json": "i18n",
     "routes.tsx": "routing",
-    "*.adoc": "document"
+    "*.adoc": "document",
   },
   "material-icon-theme.folders.associations": {
     "testcafe": "test",
@@ -31,7 +31,7 @@
     "cookbook": "test",
     "leonardo": "tools",
     "semantic-ui-styling": "less",
-    "jsonServer": "server"
+    "jsonServer": "server",
   },
   "search.useGlobalIgnoreFiles": true,
   "java.format.enabled": false,
@@ -49,7 +49,7 @@
     "**/.project": false,
     "**/.settings": false,
     "**/.vscode/": false,
-    "**/build/": false
+    "**/build/": false,
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -57,75 +57,75 @@
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
-      "value": "#b52e31"
+      "value": "#b52e31",
     },
     {
       "name": "Auth0 Orange",
-      "value": "#eb5424"
+      "value": "#eb5424",
     },
     {
       "name": "Azure Blue",
-      "value": "#007fff"
+      "value": "#007fff",
     },
     {
       "name": "C# Purple",
-      "value": "#68217A"
+      "value": "#68217A",
     },
     {
       "name": "Gatsby Purple",
-      "value": "#639"
+      "value": "#639",
     },
     {
       "name": "Go Cyan",
-      "value": "#5dc9e2"
+      "value": "#5dc9e2",
     },
     {
       "name": "Java Blue-Gray",
-      "value": "#557c9b"
+      "value": "#557c9b",
     },
     {
       "name": "JavaScript Yellow",
-      "value": "#f9e64f"
+      "value": "#f9e64f",
     },
     {
       "name": "Mandalorian Blue",
-      "value": "#1857a4"
+      "value": "#1857a4",
     },
     {
       "name": "Node Green",
-      "value": "#215732"
+      "value": "#215732",
     },
     {
       "name": "React Blue",
-      "value": "#00b3e6"
+      "value": "#00b3e6",
     },
     {
       "name": "Something Different",
-      "value": "#832561"
+      "value": "#832561",
     },
     {
       "name": "Vue Green",
-      "value": "#42b883"
-    }
+      "value": "#42b883",
+    },
   ],
   "editor.fontLigatures": true,
   "sonarlint.connectedMode.connections.sonarqube": [
     {
       "connectionId": "g3-sonar-1",
-      "serverUrl": "http://g3-sonar-1.cadis.local"
-    }
+      "serverUrl": "http://g3-sonar-1.cadis.local",
+    },
   ],
   "editor.fontFamily": "'monospace', monospace, 'Droid Sans Mono', 'Droid Sans Fallback'",
   "sonarlint.rules": {
     "typescript:S1440": {
-      "level": "on"
+      "level": "on",
     },
     "typescript:S3358": {
-      "level": "off"
+      "level": "off",
     },
     "typescript:S3776": {
-      "level": "off"
-    }
+      "level": "off",
+    },
   },
   "liveshare.featureSet": "insiders",
   "gitlab.instanceUrl": "http://la-gitlab",
@@ -133,12 +133,12 @@
   "python.languageServer": "Default",
   "java.project.importHint": false,
   "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjoyNDAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
-  "editor.formatOnSave": true,
   "svg.preview.mode": "svg",
   "editor.copyWithSyntaxHighlighting": false,
   "jest.autoEnable": false,
   "redhat.telemetry.enabled": false,
   "cSpell.userWords": [
+    "barcodes",
     "clazz",
     "Dexie",
     "Masterdata",
@@ -151,7 +151,7 @@
     "Timeslot",
     "tsyringe",
     "untouch",
-    "validatable"
+    "validatable",
   ],
   "window.titleBarStyle": "custom",
   "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm:ss",
@@ -161,56 +161,72 @@
   "keyboard.dispatch": "keyCode",
   "java.import.gradle.java.home": "/home/schulte/.sdkman/candidates/java/current",
   "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
+    "editor.defaultFormatter": "redhat.vscode-xml",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "asciidoc.extensions.enableKroki": true,
   "jest.autoRun": {
-    "watch": false
+    "watch": false,
   },
   "git.openRepositoryInParentFolders": "always",
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "never"
+    "source.fixAll.eslint": "never",
   },
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.svg": "default"
+    "*.svg": "default",
   },
   "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
+    "editor.defaultFormatter": "jock.svg",
   },
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
   },
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": true,
   "[csv]": {},
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.formatOnSave": true,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true,
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
 }

@@ -6,11 +6,9 @@ then
   sudo pacman -Syu --needed --noconfirm yay
   yay -Syu --needed --noconfirm \
     acpi \
-    ardour \
     asciinema \
     aspell-de \
     aspell-en \
-    audacity \
     avr-libc \
     base-devel \
     bash-completion \
@@ -68,7 +66,6 @@ then
     tree \
     ttf-fira-code \
     ttf-inconsolata \
-    tuxguitar \
     unzip \
     visual-studio-code-bin \
     wireshark-qt \
