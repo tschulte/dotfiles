@@ -109,12 +109,6 @@
     },
   ],
   "editor.fontLigatures": true,
-  "sonarlint.connectedMode.connections.sonarqube": [
-    {
-      "connectionId": "g3-sonar-1",
-      "serverUrl": "http://g3-sonar-1.cadis.local",
-    },
-  ],
   "editor.fontFamily": "'monospace', monospace, 'Droid Sans Mono', 'Droid Sans Fallback'",
   "sonarlint.rules": {
     "typescript:S1440": {
@@ -128,7 +122,6 @@
     },
   },
   "liveshare.featureSet": "insiders",
-  "gitlab.instanceUrl": "http://la-gitlab",
   "java.semanticHighlighting.enabled": true,
   "python.languageServer": "Default",
   "java.project.importHint": false,

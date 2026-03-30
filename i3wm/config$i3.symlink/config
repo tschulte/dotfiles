@@ -265,13 +265,6 @@ workspace 23 output $monitor3
 for_window [instance="teensy" class="Teensy"] floating enable
 for_window [class="Yad"] floating enable
 for_window [title="alsamixer"] floating enable
-for_window [title="Login - cadis"] floating enable
-for_window [title="Benutzersession abgelaufen - cadis"] floating enable
-for_window [class="kam-calipse-griffon-CadisCONTROL" title="cadis beenden"] floating enable
-for_window [title="CadisServer url chooser"] floating enable
-for_window [class="kam-calipse-griffon-CadisCONTROL" title="^win\d+$"] floating enable
-for_window [class="kam-calipse-griffon-CadisCONTROL" title="^Error$"] floating enable
-for_window [class="kam-calipse-griffon-CadisCONTROL" title="^Achtung"] floating enable
 #for_window [title="Welcome to IntelliJ IDEA"] floating enable
 for_window [title="^\[workspace 1\].*"] move container to workspace 1
 for_window [title="^\[workspace 2\].*"] move container to workspace 2
