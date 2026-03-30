@@ -58,7 +58,10 @@ then
     terminator \
     texlive-core \
     texlive-fontsextra \
+    texlive-fontsrecommended \
+    texlive-langgerman \
     texlive-latexextra \
+    texlive-latexrecommended \
     thunderbird \
     tigervnc \
     tk \
