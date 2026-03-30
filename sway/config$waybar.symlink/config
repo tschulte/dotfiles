@@ -1,6 +1,6 @@
 {
     "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
+    "position": "bottom", // Waybar position (top|bottom|left|right)
     // "height": 30, // Auto-height is used when commented
     // "width": 1280, // Full screen width when commented
     "spacing": 16, // Gaps between modules (in px)
